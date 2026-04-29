@@ -1,0 +1,104 @@
+/* Button styles converted from Figma design
+	 Visuals: brand-soft background, brand-strong border, rounded, centered label
+*/
+
+.button {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 16px;
+	border-radius: 12px;
+	border: 1px solid var(--border-border-brand-strong, #00e5ff);
+	background: var(--background-bg-brand-soft, #001a1f);
+	color: var(--text-text-brand-primary, #00e5ff);
+	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.button__icon {
+	width: 18px;
+	height: 18px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button__icon img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: contain;
+}
+
+.button__label {
+	display: inline-block;
+}
+
+/* Size modifiers */
+.button--size-large {
+	padding: 10px 16px;
+	border-radius: 12px;
+	font-size: 14px;
+	line-height: 21px;
+}
+.button--size-medium {
+	padding: 8px 14px;
+	border-radius: 10px;
+	font-size: 12px;
+	line-height: 18px;
+}
+.button--size-small {
+	padding: 6px 12px;
+	border-radius: 8px;
+	font-size: 11px;
+	line-height: 16.5px;
+}
+
+.button__icon--large { width: 18px; height: 18px }
+.button__icon--medium { width: 16px; height: 16px }
+.button__icon--small { width: 14px; height: 14px }
+
+/* Variants */
+.button--primary {
+	background: var(--background-bg-brand-soft, #001a1f);
+	border-color: var(--border-border-brand-strong, #00e5ff);
+	color: var(--text-text-brand-primary, #00e5ff);
+}
+
+.button--secondary {
+	background: var(--background-bg-dark, #1a1a1f);
+	border-color: var(--border-border-default, #27272a);
+	color: var(--text-text-secondary, #b4b4be);
+}
+
+.button--text {
+	background: transparent;
+	border-color: transparent;
+	color: var(--text-text-brand-primary, #00e5ff);
+}
+
+/* Disabled state */
+.button[disabled], .button--state-disabled {
+	background: var(--background-bg-disabled, #131316);
+	border-color: var(--border-border-default, #27272a);
+	color: var(--text-text-faintest, #333339);
+	cursor: not-allowed;
+	opacity: 0.9;
+}
+
+/* Hover and focus approximations */
+.button:hover:not([disabled]) { filter: brightness(1.05) }
+.button:focus { outline: 2px solid rgba(0,229,255,0.15); outline-offset: 2px }
+
+/* Variants (kept minimal - extend as needed) */
+.button.primary {}
