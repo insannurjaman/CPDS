@@ -35,6 +35,11 @@ body {
   --text-success: #22c55e;
   --text-danger: #ef4444;
   --text-dimmed: #64748b;
+
+  --area-fill-profit: #22c55e;
+  --area-fill-loss: #ef4444;
+  --area-stroke-profit: #22c55e;
+  --area-stroke-loss: #ef4444;
 }
 
 [data-brand="voltfunded"][data-theme="dark"] {
@@ -58,6 +63,11 @@ body {
   --text-success: #22c55e;
   --text-danger: #ef4444;
   --text-dimmed: #56565f;
+
+  --area-fill-profit: #16a34a;
+  --area-fill-loss: #dc2626;
+  --area-stroke-profit: #16a34a;
+  --area-stroke-loss: #dc2626;
 }
 
 [data-brand="instantfunding"][data-theme="light"] {
@@ -81,6 +91,11 @@ body {
   --text-success: #22c55e;
   --text-danger: #ef4444;
   --text-dimmed: #64748b;
+
+  --area-fill-profit: #22c55e;
+  --area-fill-loss: #ef4444;
+  --area-stroke-profit: #22c55e;
+  --area-stroke-loss: #ef4444;
 }
 
 [data-brand="instantfunding"][data-theme="dark"] {
@@ -104,6 +119,11 @@ body {
   --text-success: #22c55e;
   --text-danger: #ef4444;
   --text-dimmed: #56565f;
+
+  --area-fill-profit: #16a34a;
+  --area-fill-loss: #dc2626;
+  --area-stroke-profit: #16a34a;
+  --area-stroke-loss: #dc2626;
 }
 
 .token-grid {
