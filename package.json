@@ -11,7 +11,8 @@
     "storybook": "storybook dev -p 6006",
     "test:e2e": "playwright test",
     "test:e2e:update": "playwright test --update-snapshots",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "tokens:build": "style-dictionary build --config style-dictionary.config.mjs"
   },
   "dependencies": {
     "react": "^19.2.5",
@@ -38,7 +39,9 @@
     "eslint-plugin-storybook": "^10.3.6",
     "vitest": "^4.1.5",
     "playwright": "^1.59.1",
+    "@playwright/test": "^1.59.1",
     "@vitest/browser-playwright": "^4.1.5",
-    "@vitest/coverage-v8": "^4.1.5"
+    "@vitest/coverage-v8": "^4.1.5",
+    "style-dictionary": "^4.0.0"
   }
 }

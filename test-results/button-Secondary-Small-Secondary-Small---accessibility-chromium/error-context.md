@@ -1,0 +1,332 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: button.spec.js >> Secondary Small >> Secondary Small - accessibility
+- Location: tests/button.spec.js:23:5
+
+# Error details
+
+```
+Error: frame.evaluate: Error: Axe is already running. Use `await axe.run()` to wait for the previous run to finish before starting a new run.
+    at assert (http://localhost:6008/node_modules/axe-core/axe.js?v=f941d6da:7273:15)
+    at Object.run4 [as run] (http://localhost:6008/node_modules/axe-core/axe.js?v=f941d6da:29296:9)
+    at eval (eval at evaluate (:302:30), <anonymous>:1:30)
+    at UtilityScript.evaluate (<anonymous>:304:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - banner "Storybook" [ref=e6]:
+      - heading "Storybook" [level=1] [ref=e7]
+      - img
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - generic [ref=e13]:
+              - link "Skip to content" [ref=e14] [cursor=pointer]:
+                - /url: "#storybook-preview-wrapper"
+              - link "Storybook" [ref=e16] [cursor=pointer]:
+                - /url: ./
+                - img "Storybook" [ref=e17]
+              - switch "Settings" [ref=e22] [cursor=pointer]:
+                - img [ref=e23]
+            - generic [ref=e28]:
+              - generic [ref=e30] [cursor=pointer]:
+                - button "Open onboarding guide" [ref=e34]:
+                  - img [ref=e36]
+                  - strong [ref=e38]: Get started
+                - generic [ref=e39]:
+                  - button "Collapse onboarding guide" [expanded] [ref=e40]:
+                    - img [ref=e41]
+                  - button "33% completed" [ref=e43]:
+                    - generic [ref=e44]:
+                      - img [ref=e45]
+                      - img [ref=e47]
+                    - generic [ref=e50]: 33%
+              - list [ref=e52]:
+                - listitem [ref=e53]:
+                  - button "Open onboarding guide for Add 5 components" [ref=e54] [cursor=pointer]:
+                    - img [ref=e56]
+                    - generic [ref=e59]: Add 5 components
+                - listitem [ref=e60]:
+                  - button "Open onboarding guide for Change a story with Controls" [ref=e61] [cursor=pointer]:
+                    - img [ref=e63]
+                    - generic [ref=e66]: Change a story with Controls
+                - listitem [ref=e67]:
+                  - button "Open onboarding guide for Test your components" [ref=e68] [cursor=pointer]:
+                    - img [ref=e70]
+                    - generic [ref=e73]: Test your components
+                  - button "Start"
+          - generic [ref=e74]: Search for components
+          - search [ref=e75]:
+            - combobox "Search for components" [ref=e76]:
+              - generic:
+                - img
+              - searchbox "Search for components" [ref=e77]
+              - code:
+                - generic: ⌘
+                - text: K
+              - button "Tag filters" [ref=e79] [cursor=pointer]:
+                - img [ref=e80]
+            - button "Create a new story" [ref=e82] [cursor=pointer]:
+              - img [ref=e83]
+          - navigation "Stories" [ref=e86]:
+            - heading "Stories" [level=2] [ref=e87]
+            - generic [ref=e89]:
+              - button "Design Tokens" [ref=e91] [cursor=pointer]:
+                - generic [ref=e92]:
+                  - img [ref=e94]
+                  - img [ref=e96]
+                - text: Design Tokens
+              - generic [ref=e98]:
+                - button "Collapse" [expanded] [ref=e99] [cursor=pointer]:
+                  - img [ref=e101]
+                  - text: Components
+                - button "Collapse all" [ref=e103] [cursor=pointer]:
+                  - img [ref=e104]
+              - button "Button" [expanded] [ref=e107] [cursor=pointer]:
+                - generic [ref=e108]:
+                  - img [ref=e110]
+                  - img [ref=e112]
+                - text: Button
+              - link "Primary Large" [ref=e115] [cursor=pointer]:
+                - /url: /?path=/story/components-button--primary-large
+                - img [ref=e117]
+                - text: Primary Large
+              - link "Primary Medium" [ref=e120] [cursor=pointer]:
+                - /url: /?path=/story/components-button--primary-medium
+                - img [ref=e122]
+                - text: Primary Medium
+              - link "Primary Small" [ref=e125] [cursor=pointer]:
+                - /url: /?path=/story/components-button--primary-small
+                - img [ref=e127]
+                - text: Primary Small
+              - link "Secondary Large" [ref=e130] [cursor=pointer]:
+                - /url: /?path=/story/components-button--secondary-large
+                - img [ref=e132]
+                - text: Secondary Large
+              - link "Secondary Medium" [ref=e135] [cursor=pointer]:
+                - /url: /?path=/story/components-button--secondary-medium
+                - img [ref=e137]
+                - text: Secondary Medium
+              - generic [ref=e139]:
+                - link "Secondary Small" [ref=e140] [cursor=pointer]:
+                  - /url: /?path=/story/components-button--secondary-small
+                  - img [ref=e142]
+                  - text: Secondary Small
+                - link "Skip to content" [ref=e144] [cursor=pointer]:
+                  - /url: "#storybook-preview-wrapper"
+              - link "Text Large" [ref=e146] [cursor=pointer]:
+                - /url: /?path=/story/components-button--text-large
+                - img [ref=e148]
+                - text: Text Large
+              - link "Text Medium" [ref=e151] [cursor=pointer]:
+                - /url: /?path=/story/components-button--text-medium
+                - img [ref=e153]
+                - text: Text Medium
+              - link "Text Small" [ref=e156] [cursor=pointer]:
+                - /url: /?path=/story/components-button--text-small
+                - img [ref=e158]
+                - text: Text Small
+              - link "Primary Hover" [ref=e161] [cursor=pointer]:
+                - /url: /?path=/story/components-button--primary-hover
+                - img [ref=e163]
+                - text: Primary Hover
+              - link "Primary On Click" [ref=e166] [cursor=pointer]:
+                - /url: /?path=/story/components-button--primary-on-click
+                - img [ref=e168]
+                - text: Primary On Click
+              - link "Primary Disabled" [ref=e171] [cursor=pointer]:
+                - /url: /?path=/story/components-button--primary-disabled
+                - img [ref=e173]
+                - text: Primary Disabled
+              - link "With Left Icon" [ref=e176] [cursor=pointer]:
+                - /url: /?path=/story/components-button--with-left-icon
+                - img [ref=e178]
+                - text: With Left Icon
+              - link "With Right Icon" [ref=e181] [cursor=pointer]:
+                - /url: /?path=/story/components-button--with-right-icon
+                - img [ref=e183]
+                - text: With Right Icon
+              - link "With Both Icons" [ref=e186] [cursor=pointer]:
+                - /url: /?path=/story/components-button--with-both-icons
+                - img [ref=e188]
+                - text: With Both Icons
+        - generic [ref=e190]:
+          - link "Storybook 10.3 Learn what's new in Storybook Dismiss notification" [ref=e192] [cursor=pointer]:
+            - /url: /?path=/settings/whats-new
+            - img [ref=e194]
+            - generic [ref=e196]:
+              - generic "Storybook 10.3" [ref=e197]
+              - generic [ref=e198]: Learn what's new in Storybook
+            - button "Dismiss notification" [ref=e199]:
+              - img [ref=e200]
+          - region "Component tests" [ref=e202]:
+            - generic [ref=e203]:
+              - heading "Component tests" [level=2] [ref=e204]
+              - generic [ref=e205] [cursor=pointer]:
+                - button "Run tests" [ref=e209]:
+                  - img [ref=e211]
+                  - text: Run tests
+                - button "Expand testing module" [ref=e215]:
+                  - img [ref=e216]
+              - generic [ref=e218]:
+                - generic [ref=e221]:
+                  - generic [ref=e222]: Visual tests
+                  - button "Set up visual tests" [ref=e224]
+                - generic [ref=e226]:
+                  - generic [ref=e227]:
+                    - generic [ref=e228]:
+                      - generic [ref=e229]: Run component tests
+                      - generic [ref=e230]: Not run
+                    - generic [ref=e231]:
+                      - switch "Watch mode" [ref=e232] [cursor=pointer]:
+                        - img [ref=e233]
+                      - button "Start test run" [ref=e236] [cursor=pointer]:
+                        - img [ref=e237]
+                  - list [ref=e239]:
+                    - listitem [ref=e240]:
+                      - generic [ref=e241]:
+                        - checkbox "Interactions" [checked] [disabled] [ref=e243]
+                        - generic [ref=e244]: Interactions
+                      - button "Run tests to see results" [disabled] [ref=e245]
+                    - listitem [ref=e247]:
+                      - generic [ref=e248] [cursor=pointer]:
+                        - checkbox "Coverage" [ref=e250]
+                        - generic [ref=e251]: Coverage
+                      - button "Coverage unavailable, run tests first" [disabled] [ref=e252]
+                    - listitem [ref=e254]:
+                      - generic [ref=e255] [cursor=pointer]:
+                        - checkbox "Accessibility" [ref=e257]
+                        - generic [ref=e258]: Accessibility
+                      - button "Run tests to see accessibility results" [disabled] [ref=e259]
+    - separator "Sidebar resize handle" [ref=e261]
+  - generic [ref=e263]:
+    - region "Toolbar" [ref=e264]:
+      - heading "Toolbar" [level=2] [ref=e265]
+      - toolbar [ref=e266]:
+        - generic [ref=e267]:
+          - button "Reload story" [ref=e268] [cursor=pointer]:
+            - img [ref=e269]
+          - switch "Grid visibility" [ref=e271] [cursor=pointer]:
+            - img [ref=e272]
+          - button "Preview background" [ref=e274] [cursor=pointer]:
+            - img [ref=e275]
+          - switch "Measure tool" [ref=e278] [cursor=pointer]:
+            - img [ref=e279]
+          - switch "Outline tool" [ref=e282] [cursor=pointer]:
+            - img [ref=e283]
+          - button "Viewport size" [ref=e285] [cursor=pointer]:
+            - img [ref=e286]
+          - button "Vision filter" [ref=e290] [cursor=pointer]:
+            - img [ref=e291]
+          - button "Design system brand VoltFunded" [ref=e296] [cursor=pointer]:
+            - img [ref=e297]
+            - text: VoltFunded
+          - button "Light or dark theme Light" [ref=e299] [cursor=pointer]:
+            - img [ref=e300]
+            - text: Light
+        - generic [ref=e302]:
+          - switch "Change zoom level" [ref=e303] [cursor=pointer]: 100%
+          - button "Enter full screen" [ref=e304] [cursor=pointer]:
+            - img [ref=e305]
+          - button "Share" [ref=e307] [cursor=pointer]:
+            - img [ref=e308]
+          - button "Open in editor" [ref=e311] [cursor=pointer]:
+            - img [ref=e312]
+    - main "Main preview area" [ref=e315]:
+      - heading "Main preview area" [level=2] [ref=e316]
+      - generic [ref=e318]:
+        - link "Skip to sidebar" [ref=e319] [cursor=pointer]:
+          - /url: "#components-button--secondary-small"
+        - iframe [ref=e323]:
+          - button "Secondary Small" [ref=f1e4] [cursor=pointer]:
+            - generic [ref=f1e6]: Secondary Small
+  - generic [ref=e324]:
+    - separator "Addon panel resize handle" [ref=e325]
+    - region "Addon panel" [ref=e327]:
+      - heading "Addon panel" [level=2] [ref=e328]
+      - generic [ref=e329]:
+        - generic [ref=e330]:
+          - generic [ref=e331]:
+            - button "Move addon panel to right" [ref=e332] [cursor=pointer]:
+              - img [ref=e333]
+            - button "Hide addon panel" [ref=e336] [cursor=pointer]:
+              - img [ref=e337]
+          - generic [ref=e340]:
+            - button "Scroll backward" [disabled] [ref=e342]:
+              - img [ref=e343]
+            - tablist "Available addons" [ref=e346]:
+              - tab "Controls 4" [selected] [ref=e347] [cursor=pointer]:
+                - generic [ref=e348]:
+                  - generic [ref=e349]: Controls
+                  - generic [ref=e350]: "4"
+              - tab "Actions" [ref=e351] [cursor=pointer]:
+                - generic [ref=e353]: Actions
+              - tab "Interactions" [ref=e354] [cursor=pointer]:
+                - generic [ref=e356]: Interactions
+              - tab "Visual tests" [ref=e357] [cursor=pointer]
+              - tab "Accessibility" [ref=e358] [cursor=pointer]:
+                - generic [ref=e360]: Accessibility
+            - button "Scroll forward" [ref=e362] [cursor=pointer]:
+              - img [ref=e363]
+        - tabpanel "Controls 4" [ref=e365]:
+          - generic [ref=e372]:
+            - button "Reset controls" [ref=e374] [cursor=pointer]:
+              - img [ref=e375]
+            - table [ref=e377]:
+              - rowgroup [ref=e378]:
+                - row "Name Control" [ref=e379]:
+                  - columnheader "Name" [ref=e380]
+                  - columnheader "Control" [ref=e381]
+              - rowgroup [ref=e382]:
+                - row "variant variant secondary" [ref=e383]:
+                  - cell "variant" [ref=e384]
+                  - cell "variant secondary" [ref=e385]:
+                    - generic [ref=e386]:
+                      - img
+                      - generic [ref=e387]: variant
+                      - combobox "variant" [ref=e388]:
+                        - option "Choose option..."
+                        - option "primary"
+                        - option "secondary" [selected]
+                        - option "text"
+                - row "size size small" [ref=e389]:
+                  - cell "size" [ref=e390]
+                  - cell "size small" [ref=e391]:
+                    - generic [ref=e392]:
+                      - img
+                      - generic [ref=e393]: size
+                      - combobox "size" [ref=e394]:
+                        - option "Choose option..."
+                        - option "large"
+                        - option "medium"
+                        - option "small" [selected]
+                - row "text Secondary Small" [ref=e395]:
+                  - cell "text" [ref=e396]
+                  - cell "Secondary Small" [ref=e397]:
+                    - textbox [ref=e399]:
+                      - /placeholder: Edit string...
+                      - text: Secondary Small
+                - row "state state Choose option..." [ref=e400]:
+                  - cell "state" [ref=e401]
+                  - cell "state Choose option..." [ref=e402]:
+                    - generic [ref=e403]:
+                      - img
+                      - generic [ref=e404]: state
+                      - combobox "state" [ref=e405]:
+                        - option "Choose option..." [disabled] [selected]
+                        - option "default"
+                        - option "hover"
+                        - option "onclick"
+                        - option "disabled"
+```

@@ -1,0 +1,16 @@
+{
+  "radius": {
+    "sm": {
+      "value": "8px",
+      "type": "dimension"
+    },
+    "md": {
+      "value": "10px",
+      "type": "dimension"
+    },
+    "lg": {
+      "value": "12px",
+      "type": "dimension"
+    }
+  }
+}

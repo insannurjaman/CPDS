@@ -10,7 +10,7 @@ export default defineConfig({
     actionTimeout: 10_000,
   },
   webServer: {
-    command: 'npx storybook dev -p 6007',
+    command: 'npx storybook dev -p 6007 --host 0.0.0.0',
     port: 6007,
     reuseExistingServer: true,
     timeout: 120_000,

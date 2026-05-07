@@ -1,0 +1,162 @@
+{
+  "typography": {
+    "heading": {
+      "lg": {
+        "fontFamily": {
+          "value": "Geist",
+          "type": "fontFamily"
+        },
+        "fontSize": {
+          "value": "18px",
+          "type": "dimension"
+        },
+        "fontWeight": {
+          "value": "600",
+          "type": "fontWeight"
+        },
+        "lineHeight": {
+          "value": "18px",
+          "type": "dimension"
+        },
+        "letterSpacing": {
+          "value": "-2.5px",
+          "type": "dimension"
+        }
+      }
+    },
+    "body": {
+      "md": {
+        "fontFamily": {
+          "value": "Geist",
+          "type": "fontFamily"
+        },
+        "fontSize": {
+          "value": "16px",
+          "type": "dimension"
+        },
+        "fontWeight": {
+          "value": "400",
+          "type": "fontWeight"
+        },
+        "lineHeight": {
+          "value": "24px",
+          "type": "dimension"
+        },
+        "letterSpacing": {
+          "value": "0px",
+          "type": "dimension"
+        }
+      },
+      "mdMedium": {
+        "fontFamily": {
+          "value": "Geist",
+          "type": "fontFamily"
+        },
+        "fontSize": {
+          "value": "16px",
+          "type": "dimension"
+        },
+        "fontWeight": {
+          "value": "500",
+          "type": "fontWeight"
+        },
+        "lineHeight": {
+          "value": "16px",
+          "type": "dimension"
+        },
+        "letterSpacing": {
+          "value": "0px",
+          "type": "dimension"
+        }
+      },
+      "sm": {
+        "fontFamily": {
+          "value": "Geist",
+          "type": "fontFamily"
+        },
+        "fontSize": {
+          "value": "14px",
+          "type": "dimension"
+        },
+        "fontWeight": {
+          "value": "500",
+          "type": "fontWeight"
+        },
+        "lineHeight": {
+          "value": "24px",
+          "type": "dimension"
+        },
+        "letterSpacing": {
+          "value": "0px",
+          "type": "dimension"
+        }
+      },
+      "xs": {
+        "fontFamily": {
+          "value": "Geist",
+          "type": "fontFamily"
+        },
+        "fontSize": {
+          "value": "12px",
+          "type": "dimension"
+        },
+        "fontWeight": {
+          "value": "400",
+          "type": "fontWeight"
+        },
+        "lineHeight": {
+          "value": "16px",
+          "type": "dimension"
+        },
+        "letterSpacing": {
+          "value": "0px",
+          "type": "dimension"
+        }
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "inter": {
+        "value": "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
+        "type": "fontFamily"
+      }
+    },
+    "weight": {
+      "medium": {
+        "value": "500",
+        "type": "fontWeight"
+      }
+    },
+    "size": {
+      "xs": {
+        "value": "11px",
+        "type": "dimension"
+      },
+      "sm": {
+        "value": "12px",
+        "type": "dimension"
+      },
+      "base": {
+        "value": "14px",
+        "type": "dimension"
+      }
+    },
+    "line": {
+      "height": {
+        "xs": {
+          "value": "16.5px",
+          "type": "dimension"
+        },
+        "sm": {
+          "value": "18px",
+          "type": "dimension"
+        },
+        "base": {
+          "value": "21px",
+          "type": "dimension"
+        }
+      }
+    }
+  }
+}

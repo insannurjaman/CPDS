@@ -1,0 +1,97 @@
+:root {
+  color-scheme: light;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Geist", system-ui, sans-serif;
+  background: var(--color-background-page, #ffffff);
+  color: var(--color-text-primary, #020617);
+}
+
+body {
+  line-height: 1.5;
+}
+
+[data-brand="voltfunded"][data-theme="light"] {
+  --color-brand-primary: var(--color-brand-voltfunded-primary);
+  --color-brand-on-primary: var(--color-primitive-slate-50);
+
+  --color-background-page: var(--color-primitive-neutral-50);
+  --color-background-surface: var(--color-primitive-neutral-100);
+
+  --color-text-primary: var(--color-primitive-slate-950);
+  --color-text-secondary: var(--color-primitive-slate-400);
+
+  --accordion-header-hover: rgba(15, 23, 42, 0.04);
+  --accordion-panel-background: var(--color-primitive-neutral-100);
+}
+
+[data-brand="voltfunded"][data-theme="dark"] {
+  --color-brand-primary: var(--color-brand-voltfunded-primary);
+  --color-brand-on-primary: var(--color-primitive-slate-50);
+
+  --color-background-page: var(--color-primitive-slate-950);
+  --color-background-surface: var(--color-primitive-slate-900);
+
+  --color-text-primary: var(--color-primitive-slate-50);
+  --color-text-secondary: var(--color-primitive-slate-400);
+
+  --accordion-header-hover: rgba(255, 255, 255, 0.06);
+  --accordion-panel-background: var(--color-primitive-slate-900);
+}
+
+[data-brand="instantfunding"][data-theme="light"] {
+  --color-brand-primary: var(--color-brand-instantfunding-primary);
+  --color-brand-on-primary: var(--color-primitive-slate-50);
+
+  --color-background-page: var(--color-primitive-neutral-50);
+  --color-background-surface: var(--color-primitive-neutral-100);
+
+  --color-text-primary: var(--color-primitive-slate-950);
+  --color-text-secondary: var(--color-primitive-slate-400);
+
+  --accordion-header-hover: rgba(15, 23, 42, 0.04);
+  --accordion-panel-background: var(--color-primitive-neutral-100);
+}
+
+[data-brand="instantfunding"][data-theme="dark"] {
+  --color-brand-primary: var(--color-brand-instantfunding-primary);
+  --color-brand-on-primary: var(--color-primitive-slate-50);
+
+  --color-background-page: var(--color-primitive-slate-950);
+  --color-background-surface: var(--color-primitive-slate-900);
+
+  --color-text-primary: var(--color-primitive-slate-50);
+  --color-text-secondary: var(--color-primitive-slate-400);
+
+  --accordion-header-hover: rgba(255, 255, 255, 0.06);
+  --accordion-panel-background: var(--color-primitive-slate-900);
+}
+
+.token-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.token-card {
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.token-swatch {
+  width: 100%;
+  min-height: 60px;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+.token-label {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-text-secondary, #64748b);
+}

@@ -1,0 +1,99 @@
+.accordion {
+	display: grid;
+	gap: var(--space-4);
+	width: 100%;
+}
+
+.accordion__item {
+	background: var(--accordion-panel-background, var(--color-background-surface));
+	border: 1px solid var(--color-border-border-default);
+	border-radius: 18px;
+	overflow: hidden;
+	box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.accordion__trigger {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: var(--space-3);
+	padding: var(--space-3) var(--space-4);
+	background: transparent;
+	border: none;
+	text-align: left;
+	cursor: pointer;
+	color: var(--color-text-primary);
+	font-family: var(--font-family-inter);
+	font-size: var(--font-size-base);
+	font-weight: 700;
+	line-height: var(--line-height-base);
+	transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.accordion__trigger:hover,
+.accordion__trigger:focus-visible {
+	background: var(--accordion-header-hover, rgba(15, 23, 42, 0.04));
+	outline: none;
+}
+
+.accordion__trigger:focus-visible {
+	outline: 2px solid var(--color-brand-primary);
+	outline-offset: 2px;
+}
+
+.accordion__summary {
+	display: grid;
+	gap: var(--space-1);
+	flex: 1;
+}
+
+.accordion__title {
+	display: block;
+	font-size: var(--font-size-base);
+	font-weight: 700;
+	line-height: var(--line-height-base);
+}
+
+.accordion__description {
+	display: block;
+	color: var(--color-text-secondary);
+	font-size: var(--font-size-sm);
+	line-height: var(--line-height-sm);
+}
+
+.accordion__icon {
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	color: var(--color-brand-primary);
+	transition: transform 0.2s ease;
+}
+
+.accordion__icon--open {
+	transform: rotate(180deg);
+}
+
+.accordion__panel {
+	padding: 0 var(--space-4) var(--space-4);
+	background: var(--accordion-panel-background, var(--color-background-surface));
+	color: var(--color-text-primary);
+	font-size: var(--font-size-sm);
+	line-height: var(--line-height-sm);
+	border-top: 1px solid var(--color-border-border-default);
+}
+
+.accordion__panel--open {
+	animation: accordion-open 160ms ease-out;
+}
+
+@keyframes accordion-open {
+	from {
+		opacity: 0;
+		transform: translateY(-6px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

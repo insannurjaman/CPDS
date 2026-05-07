@@ -1,4 +1,3 @@
-import React from 'react'
 import Button from './Button'
 import { leftIcon, rightIcon } from './icons'
 
@@ -8,15 +7,117 @@ export default {
   argTypes: {
     variant: { control: { type: 'select' }, options: ['primary', 'secondary', 'text'] },
     size: { control: { type: 'select' }, options: ['large', 'medium', 'small'] },
-    state: { control: { type: 'select' }, options: ['default', 'hover', 'focused', 'disabled'] },
+    state: { control: { type: 'select' }, options: ['default', 'hover', 'onclick', 'focused', 'disabled'] },
   },
 }
 
-const Template = (args) => <Button {...args} />
+const PageWrapper = ({ title, children }) => (
+  <div
+    style={{
+      minHeight: '100vh',
+      padding: '36px 24px',
+      background: 'var(--color-background-page)',
+      color: 'var(--color-text-primary)',
+      fontFamily: 'Inter, system-ui, sans-serif',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'flex-start',
+    }}
+  >
+    <div style={{ width: '100%', maxWidth: 540, display: 'grid', gap: 20 }}>
+      <section style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
+          <div>
+            <p style={{ margin: 0, fontSize: 20, fontWeight: 700 }}>{title}</p>
+            <p style={{ margin: '6px 0 0', color: 'var(--color-text-secondary)', fontSize: 14 }}>
+              Preview inside the current Storybook brand/theme page
+            </p>
+          </div>
+          <span
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '8px 12px',
+              borderRadius: 999,
+              background: 'rgba(255,255,255,0.08)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              color: 'var(--color-text-primary)',
+              fontSize: 12,
+              fontWeight: 600,
+            }}
+          >
+            Page preview
+          </span>
+        </div>
+      </section>
+      <div
+        style={{
+          background: 'var(--color-background-surface)',
+          borderRadius: 24,
+          border: '1px solid rgba(255,255,255,0.08)',
+          boxShadow: '0 40px 80px rgba(0,0,0,0.08)',
+          padding: 32,
+          display: 'flex',
+          justifyContent: 'center',
+        }}
+      >
+        {children}
+      </div>
+    </div>
+  </div>
+)
 
-export const Primary = Template.bind({})
-Primary.args = { variant: 'primary', text: 'Button' }
+const Template = (args) => (
+  <PageWrapper title={`${args.variant?.charAt(0).toUpperCase()}${args.variant?.slice(1)} ${args.size?.charAt(0).toUpperCase()}${args.size?.slice(1)}`}>
+    <Button {...args} />
+  </PageWrapper>
+)
 
+// Primary Button Variants
+export const PrimaryLarge = Template.bind({})
+PrimaryLarge.args = { variant: 'primary', size: 'large', text: 'Primary Large' }
+
+export const PrimaryMedium = Template.bind({})
+PrimaryMedium.args = { variant: 'primary', size: 'medium', text: 'Primary Medium' }
+
+export const PrimarySmall = Template.bind({})
+PrimarySmall.args = { variant: 'primary', size: 'small', text: 'Primary Small' }
+
+// Secondary Button Variants
+export const SecondaryLarge = Template.bind({})
+SecondaryLarge.args = { variant: 'secondary', size: 'large', text: 'Secondary Large' }
+
+export const SecondaryMedium = Template.bind({})
+SecondaryMedium.args = { variant: 'secondary', size: 'medium', text: 'Secondary Medium' }
+
+export const SecondarySmall = Template.bind({})
+SecondarySmall.args = { variant: 'secondary', size: 'small', text: 'Secondary Small' }
+
+// Text Button Variants
+export const TextLarge = Template.bind({})
+TextLarge.args = { variant: 'text', size: 'large', text: 'Text Large' }
+
+export const TextMedium = Template.bind({})
+TextMedium.args = { variant: 'text', size: 'medium', text: 'Text Medium' }
+
+export const TextSmall = Template.bind({})
+TextSmall.args = { variant: 'text', size: 'small', text: 'Text Small' }
+
+// State Examples
+export const PrimaryHover = Template.bind({})
+PrimaryHover.args = { variant: 'primary', size: 'large', state: 'hover', text: 'Primary Hover' }
+
+export const PrimaryOnClick = Template.bind({})
+PrimaryOnClick.args = { variant: 'primary', size: 'large', state: 'onclick', text: 'Primary Click' }
+
+export const PrimaryFocused = Template.bind({})
+PrimaryFocused.args = { variant: 'primary', size: 'large', state: 'focused', text: 'Primary Focused' }
+
+export const PrimaryDisabled = Template.bind({})
+PrimaryDisabled.args = { variant: 'primary', size: 'large', state: 'disabled', text: 'Primary Disabled' }
+
+// With Icons
 export const WithLeftIcon = Template.bind({})
 WithLeftIcon.args = { leftIcon, text: 'Edit' }
 
@@ -25,12 +126,3 @@ WithRightIcon.args = { rightIcon, text: 'Send' }
 
 export const WithBothIcons = Template.bind({})
 WithBothIcons.args = { leftIcon, rightIcon, text: 'Share' }
-
-export const Disabled = Template.bind({})
-Disabled.args = { variant: 'primary', size: 'large', state: 'disabled', text: 'Disabled' }
-
-export const Hover = Template.bind({})
-Hover.args = { variant: 'primary', size: 'large', state: 'hover', text: 'Hover' }
-
-export const Focused = Template.bind({})
-Focused.args = { variant: 'primary', size: 'large', state: 'focused', text: 'Focused' }

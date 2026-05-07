@@ -1,0 +1,40 @@
+{
+  "space": {
+    "0": {
+      "value": "0px",
+      "type": "dimension"
+    },
+    "1": {
+      "value": "4px",
+      "type": "dimension"
+    },
+    "1-5": {
+      "value": "6px",
+      "type": "dimension"
+    },
+    "2": {
+      "value": "8px",
+      "type": "dimension"
+    },
+    "2-5": {
+      "value": "10px",
+      "type": "dimension"
+    },
+    "3": {
+      "value": "12px",
+      "type": "dimension"
+    },
+    "3-5": {
+      "value": "14px",
+      "type": "dimension"
+    },
+    "4": {
+      "value": "16px",
+      "type": "dimension"
+    },
+    "8": {
+      "value": "32px",
+      "type": "dimension"
+    }
+  }
+}

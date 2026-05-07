@@ -1,20 +1,54 @@
+import React from 'react';
+import '../src/styles/tokens.css';
+import '../src/styles/global.css';
+
 /** @type { import('@storybook/react-vite').Preview } */
 const preview = {
   parameters: {
     controls: {
       matchers: {
-       color: /(background|color)$/i,
-       date: /Date$/i,
-      },
+        color: /(background|color)$/i,
+        date: /Date$/i
+      }
     },
-
     a11y: {
-      // 'todo' - show a11y violations in the test UI only
-      // 'error' - fail CI on a11y violations
-      // 'off' - skip a11y checks entirely
-      test: "todo"
+      test: 'todo'
     }
   },
+  globalTypes: {
+    brand: {
+      name: 'Brand',
+      description: 'Design system brand',
+      defaultValue: 'voltfunded',
+      toolbar: {
+        icon: 'paintbrush',
+        items: [
+          { value: 'voltfunded', title: 'VoltFunded' },
+          { value: 'instantfunding', title: 'InstantFunding' }
+        ]
+      }
+    },
+    theme: {
+      name: 'Theme',
+      description: 'Light or dark theme',
+      defaultValue: 'light',
+      toolbar: {
+        icon: 'circlehollow',
+        items: [
+          { value: 'light', title: 'Light' },
+          { value: 'dark', title: 'Dark' }
+        ]
+      }
+    }
+  },
+  decorators: [
+    (Story, context) => 
+      React.createElement(
+        'div',
+        { 'data-brand': context.globals.brand, 'data-theme': context.globals.theme, style: { minHeight: '100vh' } },
+        React.createElement(Story)
+      )
+  ]
 };
 
 export default preview;

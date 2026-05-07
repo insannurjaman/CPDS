@@ -1,4 +1,3 @@
-import React from 'react'
 import './Button.css'
 import { leftIcon as defaultLeftIcon, rightIcon as defaultRightIcon } from './icons'
 
@@ -36,7 +35,12 @@ function Button(props) {
   ]
 
   return (
-    <button className={classes.filter(Boolean).join(' ')} disabled={isDisabled} {...rest}>
+    <button
+      type={rest.type || 'button'}
+      className={classes.filter(Boolean).join(' ')}
+      disabled={isDisabled}
+      {...rest}
+    >
       {showLeftIcon && (
         <span className={`button__icon button__icon--left button__icon--${sizeKey}`} aria-hidden>
           {leftIcon ? (typeof leftIcon === 'string' ? <img src={leftIcon} alt="" /> : leftIcon) : <img src={defaultLeftIcon} alt="" />}

@@ -1,0 +1,82 @@
+{
+  "color": {
+    "semantic": {
+      "brand": {
+        "primary": {
+          "value": "{color.brand.voltfunded.primary}",
+          "type": "color"
+        },
+        "onPrimary": {
+          "value": "{color.primitive.slate.50}",
+          "type": "color"
+        }
+      },
+      "background": {
+        "page": {
+          "value": "{color.primitive.neutral.50}",
+          "type": "color"
+        },
+        "surface": {
+          "value": "{color.primitive.neutral.100}",
+          "type": "color"
+        },
+        "bg-brand-soft": {
+          "value": "{color.primitive.neutral.900}",
+          "type": "color"
+        },
+        "bg-brand": {
+          "value": "{color.brand.voltfunded.primary}",
+          "type": "color"
+        },
+        "bg-dark": {
+          "value": "{color.primitive.neutral.950}",
+          "type": "color"
+        },
+        "bg-disabled": {
+          "value": "{color.primitive.neutral.800}",
+          "type": "color"
+        }
+      },
+      "border": {
+        "border-brand-soft": {
+          "value": "{color.brand.voltfunded.primary}",
+          "type": "color"
+        },
+        "border-default": {
+          "value": "{color.primitive.neutral.700}",
+          "type": "color"
+        },
+        "border-medium": {
+          "value": "{color.primitive.neutral.600}",
+          "type": "color"
+        }
+      },
+      "text": {
+        "primary": {
+          "value": "{color.primitive.slate.950}",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "{color.primitive.slate.400}",
+          "type": "color"
+        },
+        "text-brand-primary": {
+          "value": "{color.brand.voltfunded.primary}",
+          "type": "color"
+        },
+        "text-secondary": {
+          "value": "{color.primitive.slate.300}",
+          "type": "color"
+        },
+        "text-faintest": {
+          "value": "{color.primitive.slate.500}",
+          "type": "color"
+        },
+        "onBrand": {
+          "value": "{color.primitive.slate.50}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

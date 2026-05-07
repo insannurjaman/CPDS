@@ -1,0 +1,19 @@
+{
+  "color": {
+    "brand": {
+      "voltfunded": {
+        "primary": {
+          "value": "#7c3aed",
+          "type": "color",
+          "comment": "TODO: replace with the actual VoltFunded primary color if available in Figma"
+        }
+      },
+      "instantfunding": {
+        "primary": {
+          "value": "#7270ff",
+          "type": "color"
+        }
+      }
+    }
+  }
+}
