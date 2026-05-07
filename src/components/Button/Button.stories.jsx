@@ -1,5 +1,5 @@
 import Button from './Button'
-import { leftIcon, rightIcon } from './icons'
+import { leftIcon, rightIcon, iconOptions } from './icons'
 
 export default {
   title: 'Components/Button',
@@ -8,6 +8,18 @@ export default {
     variant: { control: { type: 'select' }, options: ['primary', 'secondary', 'text'] },
     size: { control: { type: 'select' }, options: ['large', 'medium', 'small'] },
     state: { control: { type: 'select' }, options: ['default', 'hover', 'onclick', 'focused', 'disabled'] },
+    leftIcon: {
+      control: { type: 'select' },
+      options: Object.keys(iconOptions),
+      mapping: iconOptions,
+    },
+    rightIcon: {
+      control: { type: 'select' },
+      options: Object.keys(iconOptions),
+      mapping: iconOptions,
+    },
+    showLeftIcon: { control: { type: 'boolean' } },
+    showRightIcon: { control: { type: 'boolean' } },
   },
 }
 
@@ -119,10 +131,33 @@ PrimaryDisabled.args = { variant: 'primary', size: 'large', state: 'disabled', t
 
 // With Icons
 export const WithLeftIcon = Template.bind({})
-WithLeftIcon.args = { leftIcon, text: 'Edit' }
+WithLeftIcon.args = { leftIcon, text: 'Edit', showLeftIcon: true }
 
 export const WithRightIcon = Template.bind({})
-WithRightIcon.args = { rightIcon, text: 'Send' }
+WithRightIcon.args = { rightIcon, text: 'Send', showRightIcon: true }
 
 export const WithBothIcons = Template.bind({})
-WithBothIcons.args = { leftIcon, rightIcon, text: 'Share' }
+WithBothIcons.args = { leftIcon, rightIcon, text: 'Share', showLeftIcon: true, showRightIcon: true }
+
+// Icon Control Demo - showcases replaceable icons
+export const IconControlsDemo = (args) => (
+  <PageWrapper title="Icon Controls">
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 24, width: '100%' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+        <div>
+          <p style={{ margin: '0 0 12px', fontSize: 14, fontWeight: 600, color: 'var(--color-text-primary)' }}>Left Icon Only</p>
+          <Button {...args} leftIcon={args.leftIcon} showLeftIcon={true} showRightIcon={false} text="Edit" />
+        </div>
+        <div>
+          <p style={{ margin: '0 0 12px', fontSize: 14, fontWeight: 600, color: 'var(--color-text-primary)' }}>Right Icon Only</p>
+          <Button {...args} rightIcon={args.rightIcon} showLeftIcon={false} showRightIcon={true} text="Send" />
+        </div>
+      </div>
+      <div>
+        <p style={{ margin: '0 0 12px', fontSize: 14, fontWeight: 600, color: 'var(--color-text-primary)' }}>Both Icons</p>
+        <Button {...args} leftIcon={args.leftIcon} rightIcon={args.rightIcon} showLeftIcon={true} showRightIcon={true} text="Share" />
+      </div>
+    </div>
+  </PageWrapper>
+)
+IconControlsDemo.args = { leftIcon, rightIcon, variant: 'primary', size: 'large' }

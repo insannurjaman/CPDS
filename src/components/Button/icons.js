@@ -5,4 +5,11 @@ import rightIconUrl from './assets/icon-right.svg'
 export const leftIcon = leftIconUrl
 export const rightIcon = rightIconUrl
 
-export default { leftIcon, rightIcon }
+// Icon options map for Storybook controls
+export const iconOptions = {
+  none: null,
+  leftIcon: leftIconUrl,
+  rightIcon: rightIconUrl,
+}
+
+export default { leftIcon, rightIcon, iconOptions }
