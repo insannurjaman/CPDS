@@ -42,12 +42,26 @@ const preview = {
     }
   },
   decorators: [
-    (Story, context) => 
-      React.createElement(
+    (Story, context) => {
+      const brand = context.globals.brand || 'voltfunded';
+      const theme = context.globals.theme || 'light';
+      
+      return React.createElement(
         'div',
-        { 'data-brand': context.globals.brand, 'data-theme': context.globals.theme, style: { minHeight: '100vh' } },
+        { 
+          'data-brand': brand, 
+          'data-theme': theme, 
+          style: { 
+            minHeight: '100vh',
+            width: '100%',
+            backgroundColor: 'var(--color-background-page)',
+            color: 'var(--color-text-primary)',
+            transition: 'background-color 0.3s ease, color 0.3s ease'
+          }
+        },
         React.createElement(Story)
       )
+    }
   ]
 };
 
