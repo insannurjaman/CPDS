@@ -8,8 +8,8 @@ export const rightIcon = rightIconUrl
 // Icon options map for Storybook controls
 export const iconOptions = {
   none: null,
-  leftIcon: leftIconUrl,
-  rightIcon: rightIconUrl,
+  'Default Left': leftIconUrl,
+  'Default Right': rightIconUrl,
 }
 
 export default { leftIcon, rightIcon, iconOptions }
