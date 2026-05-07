@@ -26,6 +26,15 @@ body {
 
   --accordion-header-hover: rgba(15, 23, 42, 0.04);
   --accordion-panel-background: var(--color-primitive-neutral-100);
+
+  --bg-input: #f1f5f9;
+  --bg-success-soft: #f0fdf4;
+  --bg-danger-soft: #fef2f2;
+  --bg-success: #166534;
+  --bg-danger: #991b1b;
+  --text-success: #22c55e;
+  --text-danger: #ef4444;
+  --text-dimmed: #64748b;
 }
 
 [data-brand="voltfunded"][data-theme="dark"] {
@@ -40,6 +49,15 @@ body {
 
   --accordion-header-hover: rgba(255, 255, 255, 0.06);
   --accordion-panel-background: var(--color-primitive-slate-900);
+
+  --bg-input: #18181c;
+  --bg-success-soft: #1f2c24;
+  --bg-danger-soft: #2f2121;
+  --bg-success: #166534;
+  --bg-danger: #991b1b;
+  --text-success: #22c55e;
+  --text-danger: #ef4444;
+  --text-dimmed: #56565f;
 }
 
 [data-brand="instantfunding"][data-theme="light"] {
@@ -54,6 +72,15 @@ body {
 
   --accordion-header-hover: rgba(15, 23, 42, 0.04);
   --accordion-panel-background: var(--color-primitive-neutral-100);
+
+  --bg-input: #f1f5f9;
+  --bg-success-soft: #f0fdf4;
+  --bg-danger-soft: #fef2f2;
+  --bg-success: #166534;
+  --bg-danger: #991b1b;
+  --text-success: #22c55e;
+  --text-danger: #ef4444;
+  --text-dimmed: #64748b;
 }
 
 [data-brand="instantfunding"][data-theme="dark"] {
@@ -68,6 +95,15 @@ body {
 
   --accordion-header-hover: rgba(255, 255, 255, 0.06);
   --accordion-panel-background: var(--color-primitive-slate-900);
+
+  --bg-input: #18181c;
+  --bg-success-soft: #1f2c24;
+  --bg-danger-soft: #2f2121;
+  --bg-success: #166534;
+  --bg-danger: #991b1b;
+  --text-success: #22c55e;
+  --text-danger: #ef4444;
+  --text-dimmed: #56565f;
 }
 
 .token-grid {

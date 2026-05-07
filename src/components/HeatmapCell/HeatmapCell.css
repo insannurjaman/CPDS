@@ -1,0 +1,60 @@
+.heatmapCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 24px;
+  border-radius: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.heatmapCellNa {
+  background-color: var(--bg-input);
+  width: 92px;
+}
+
+.heatmapCellNa .heatmapCellText {
+  color: var(--text-dimmed);
+}
+
+.heatmapCellPositiveLow,
+.heatmapCellPositiveHigh,
+.heatmapCellNegativeLow,
+.heatmapCellNegativeHigh {
+  height: 30px;
+}
+
+.heatmapCellPositiveLow {
+  background-color: var(--bg-success-soft);
+}
+
+.heatmapCellPositiveLow .heatmapCellText {
+  color: var(--bg-success);
+}
+
+.heatmapCellPositiveHigh {
+  background-color: var(--bg-success-soft);
+}
+
+.heatmapCellPositiveHigh .heatmapCellText {
+  color: var(--text-success);
+}
+
+.heatmapCellNegativeLow {
+  background-color: var(--bg-danger-soft);
+}
+
+.heatmapCellNegativeLow .heatmapCellText {
+  color: var(--bg-danger);
+}
+
+.heatmapCellNegativeHigh {
+  background-color: var(--bg-danger-soft);
+}
+
+.heatmapCellNegativeHigh .heatmapCellText {
+  color: var(--text-danger);
+}
