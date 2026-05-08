@@ -68,19 +68,19 @@
 .button--primary {
 	background: var(--color-brand-primary);
 	border-color: var(--color-brand-primary);
-	color: var(--color-brand-on-primary);
+	color: var(--color-semantic-text-on-brand, #ffffff);
 }
 
 .button--secondary {
 	background: var(--color-background-surface);
 	border-color: var(--color-semantic-border-border-default);
-	color: var(--color-text-secondary);
+	color: var(--color-text-primary);
 }
 
 .button--text {
 	background: transparent;
 	border-color: transparent;
-	color: var(--color-brand-primary);
+	color: var(--color-text-primary);
 }
 
 /* State styles */
@@ -97,8 +97,8 @@
 }
 
 .button--state-onclick {
-	opacity: 0.8;
 	transform: scale(0.98);
+	filter: brightness(0.95);
 }
 
 .button--state-focused,

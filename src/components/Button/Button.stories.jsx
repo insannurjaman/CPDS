@@ -41,7 +41,7 @@ const PageWrapper = ({ title, children }) => (
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
           <div>
             <p style={{ margin: 0, fontSize: 20, fontWeight: 700 }}>{title}</p>
-            <p style={{ margin: '6px 0 0', color: 'var(--color-text-secondary)', fontSize: 14 }}>
+            <p style={{ margin: '6px 0 0', color: 'var(--color-text-primary)', fontSize: 14 }}>
               Preview inside the current Storybook brand/theme page
             </p>
           </div>

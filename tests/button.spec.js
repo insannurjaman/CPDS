@@ -29,14 +29,27 @@ for (const s of stories) {
       const frame = await iframeHandle.contentFrame()
       if (!frame) throw new Error('Preview frame not found')
 
-      // For disabled buttons, we use div instead of button
-      const elementSelector = s.name.includes('Disabled') ? '#storybook-root div' : '#storybook-root button'
+      const elementSelector = '#storybook-root button'
       const btnLocator = frame.locator(elementSelector).first()
       await btnLocator.waitFor({ state: 'visible', timeout: 20000 })
 
       // inject axe into the preview frame and run accessibility checks against the story root only
       await frame.addScriptTag({ url: 'https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.0/axe.min.js' })
-      const result = await frame.evaluate(async () => await window.axe.run(document.querySelector('#storybook-root')))
+      await frame.waitForFunction(() => window.axe && typeof window.axe.run === 'function')
+      const result = await frame.evaluate(async () => {
+        const runAxe = async () => {
+          try {
+            return await window.axe.run(document.querySelector('#storybook-root'))
+          } catch (error) {
+            if (error?.message?.includes('Axe is already running')) {
+              await new Promise((resolve) => setTimeout(resolve, 100))
+              return runAxe()
+            }
+            throw error
+          }
+        }
+        return await runAxe()
+      })
       if (result.violations && result.violations.length > 0) {
         console.error('Axe violations:', JSON.stringify(result.violations, null, 2))
       }
@@ -49,8 +62,7 @@ for (const s of stories) {
       await page.waitForSelector('iframe#storybook-preview-iframe', { timeout: 20000 })
       const frameLocator2 = page.frameLocator('iframe#storybook-preview-iframe')
 
-      // For disabled buttons, we use div instead of button
-      const elementSelector = s.name.includes('Disabled') ? '#storybook-root div' : '#storybook-root button'
+      const elementSelector = '#storybook-root button'
       const btnLocator2 = frameLocator2.locator(elementSelector).first()
       await btnLocator2.waitFor({ state: 'visible', timeout: 20000 })
       await expect(btnLocator2).toHaveScreenshot(`button-${s.id}.png`)
