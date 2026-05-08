@@ -6,7 +6,7 @@
 
 # Test info
 
-- Name: button.spec.js >> Secondary Small >> Secondary Small - accessibility
+- Name: button.spec.js >> With Left Icon >> With Left Icon - accessibility
 - Location: tests/button.spec.js:23:5
 
 # Error details
@@ -127,45 +127,45 @@ Received: 1
                 - /url: /?path=/story/components-button--secondary-medium
                 - img [ref=e153]
                 - text: Secondary Medium
-              - generic [ref=e155]:
-                - link "Secondary Small" [ref=e156] [cursor=pointer]:
-                  - /url: /?path=/story/components-button--secondary-small
-                  - img [ref=e158]
-                  - text: Secondary Small
-                - link "Skip to content" [ref=e160] [cursor=pointer]:
-                  - /url: "#storybook-preview-wrapper"
-              - link "Text Large" [ref=e162] [cursor=pointer]:
+              - link "Secondary Small" [ref=e156] [cursor=pointer]:
+                - /url: /?path=/story/components-button--secondary-small
+                - img [ref=e158]
+                - text: Secondary Small
+              - link "Text Large" [ref=e161] [cursor=pointer]:
                 - /url: /?path=/story/components-button--text-large
-                - img [ref=e164]
+                - img [ref=e163]
                 - text: Text Large
-              - link "Text Medium" [ref=e167] [cursor=pointer]:
+              - link "Text Medium" [ref=e166] [cursor=pointer]:
                 - /url: /?path=/story/components-button--text-medium
-                - img [ref=e169]
+                - img [ref=e168]
                 - text: Text Medium
-              - link "Text Small" [ref=e172] [cursor=pointer]:
+              - link "Text Small" [ref=e171] [cursor=pointer]:
                 - /url: /?path=/story/components-button--text-small
-                - img [ref=e174]
+                - img [ref=e173]
                 - text: Text Small
-              - link "Primary Hover" [ref=e177] [cursor=pointer]:
+              - link "Primary Hover" [ref=e176] [cursor=pointer]:
                 - /url: /?path=/story/components-button--primary-hover
-                - img [ref=e179]
+                - img [ref=e178]
                 - text: Primary Hover
-              - link "Primary On Click" [ref=e182] [cursor=pointer]:
+              - link "Primary On Click" [ref=e181] [cursor=pointer]:
                 - /url: /?path=/story/components-button--primary-on-click
-                - img [ref=e184]
+                - img [ref=e183]
                 - text: Primary On Click
-              - link "Primary Focused" [ref=e187] [cursor=pointer]:
+              - link "Primary Focused" [ref=e186] [cursor=pointer]:
                 - /url: /?path=/story/components-button--primary-focused
-                - img [ref=e189]
+                - img [ref=e188]
                 - text: Primary Focused
-              - link "Primary Disabled" [ref=e192] [cursor=pointer]:
+              - link "Primary Disabled" [ref=e191] [cursor=pointer]:
                 - /url: /?path=/story/components-button--primary-disabled
-                - img [ref=e194]
+                - img [ref=e193]
                 - text: Primary Disabled
-              - link "With Left Icon" [ref=e197] [cursor=pointer]:
-                - /url: /?path=/story/components-button--with-left-icon
-                - img [ref=e199]
-                - text: With Left Icon
+              - generic [ref=e195]:
+                - link "With Left Icon" [ref=e196] [cursor=pointer]:
+                  - /url: /?path=/story/components-button--with-left-icon
+                  - img [ref=e198]
+                  - text: With Left Icon
+                - link "Skip to content" [ref=e200] [cursor=pointer]:
+                  - /url: "#storybook-preview-wrapper"
               - link "With Right Icon" [ref=e202] [cursor=pointer]:
                 - /url: /?path=/story/components-button--with-right-icon
                 - img [ref=e204]
@@ -260,16 +260,16 @@ Received: 1
       - heading "Main preview area" [level=2] [ref=e339]
       - generic [ref=e341]:
         - link "Skip to sidebar" [ref=e342] [cursor=pointer]:
-          - /url: "#components-button--secondary-small"
+          - /url: "#components-button--with-left-icon"
         - iframe [ref=e346]:
           - generic [ref=f1e5]:
             - generic [ref=f1e7]:
               - generic [ref=f1e8]:
-                - paragraph [ref=f1e9]: Secondary Small
+                - paragraph [ref=f1e9]: undefinedundefined undefinedundefined
                 - paragraph [ref=f1e10]: Preview inside the current Storybook brand/theme page
               - generic [ref=f1e11]: Page preview
-            - button "Secondary Small" [ref=f1e13] [cursor=pointer]:
-              - generic [ref=f1e15]: Secondary Small
+            - button "Add Item" [ref=f1e13] [cursor=pointer]:
+              - generic [ref=f1e15]: Add Item
   - generic [ref=e347]:
     - separator "Addon panel resize handle" [ref=e348]
     - region "Addon panel" [ref=e350]:
@@ -310,54 +310,195 @@ Received: 1
                   - columnheader "Name" [ref=e404]
                   - columnheader "Control" [ref=e405]
               - rowgroup [ref=e406]:
-                - row "variant variant secondary" [ref=e407]:
-                  - cell "variant" [ref=e408]
-                  - cell "variant secondary" [ref=e409]:
+                - row "leftIcon leftIcon Choose option..." [ref=e407]:
+                  - cell "leftIcon" [ref=e408]
+                  - cell "leftIcon Choose option..." [ref=e409]:
                     - generic [ref=e410]:
                       - img
-                      - generic [ref=e411]: variant
-                      - combobox "variant" [ref=e412]:
-                        - option "Choose option..."
-                        - option "primary"
-                        - option "secondary" [selected]
-                        - option "text"
-                - row "size size small" [ref=e413]:
-                  - cell "size" [ref=e414]
-                  - cell "size small" [ref=e415]:
-                    - generic [ref=e416]:
+                      - generic [ref=e411]: leftIcon
+                      - combobox "leftIcon" [ref=e412]:
+                        - option "Choose option..." [disabled] [selected]
+                        - option "none"
+                        - option "--- Default ---"
+                        - option "Plus (Default)"
+                        - option "Default Left"
+                        - option "Default Right"
+                        - option "--- Assets ---"
+                        - option "Activity"
+                        - option "Android"
+                        - option "Android Logo"
+                        - option "Apple Logo"
+                        - option "Arrow Down"
+                        - option "Arrow Insert"
+                        - option "Arrow Left"
+                        - option "Arrow Outward"
+                        - option "Arrow Right"
+                        - option "Arrow Up"
+                        - option "Attachment"
+                        - option "Bank"
+                        - option "Bar Chart"
+                        - option "Bitcoin"
+                        - option "Book"
+                        - option "Brain"
+                        - option "Building"
+                        - option "Calendar"
+                        - option "Card"
+                        - option "Chat"
+                        - option "Check Circle"
+                        - option "Check Line"
+                        - option "Chevron Down"
+                        - option "Chevron Left"
+                        - option "Chevron Right"
+                        - option "Chevron Up"
+                        - option "Circles"
+                        - option "City"
+                        - option "Close"
+                        - option "Close Circle"
+                        - option "Configure"
+                        - option "Copy"
+                        - option "Cross Shield"
+                        - option "Crown"
+                        - option "Customize"
+                        - option "Decrease"
+                        - option "Desktop"
+                        - option "Dollar"
+                        - option "Dot"
+                        - option "Down Line"
+                        - option "Download"
+                        - option "Email"
+                        - option "External Link"
+                        - option "Eye Closed"
+                        - option "Eye Open"
+                        - option "File"
+                        - option "Fire"
+                        - option "Group"
+                        - option "Growth"
+                        - option "Headphone"
+                        - option "Home"
+                        - option "Inbox"
+                        - option "Info"
+                        - option "IOS"
+                        - option "IOS Logo"
+                        - option "Laptop"
+                        - option "Light Mode"
+                        - option "Link"
+                        - option "Lock"
+                        - option "Loss"
+                        - option "Magic"
+                        - option "Mail"
+                        - option "Map Point"
+                        - option "More Horizontal"
+                        - option "More Vertical"
+                        - option "Night Mode"
+                        - option "No Record"
+                        - option "Notification"
+                        - option "Pencil"
+                        - option "People"
+                        - option "Phone"
+                        - option "Phone 1"
+                        - option "Pie Chart"
+                        - option "Product Icon"
+                        - option "Profit"
+                        - option "Prohibition"
+                        - option "Question Mark"
+                        - option "React"
+                        - option "Refresh 1"
+                        - option "Refresh 2"
+                        - option "Repeat"
+                        - option "Reward"
+                        - option "Security"
+                        - option "Send"
+                        - option "Setting"
+                        - option "Share"
+                        - option "Shield"
+                        - option "Shield Check"
+                        - option "Sidebar Accounts"
+                        - option "Sidebar Analysis Hub"
+                        - option "Sidebar Certificates"
+                        - option "Sidebar Challenges"
+                        - option "Sidebar Collapse"
+                        - option "Sidebar Dashboard"
+                        - option "Sidebar Downloads"
+                        - option "Sidebar Expand"
+                        - option "Sidebar Kyc Verification"
+                        - option "Sidebar My Profile"
+                        - option "Sidebar Orders"
+                        - option "Sidebar Payouts"
+                        - option "Sidebar Points & Rewards"
+                        - option "Sidebar Search"
+                        - option "Sidebar Shortcut"
+                        - option "Sidebar Supports"
+                        - option "Sidebar Trading Tools"
+                        - option "Stack"
+                        - option "Star"
+                        - option "Star Filled"
+                        - option "Thunder"
+                        - option "Time"
+                        - option "Timer"
+                        - option "Tools"
+                        - option "Up Line"
+                        - option "Vite"
+                        - option "Wallet"
+                        - option "Warning Circle"
+                        - option "Warning Triangle"
+                        - option "Web"
+                        - option "Windows Logo"
+                        - option "World"
+                - row "text Add Item" [ref=e413]:
+                  - cell "text" [ref=e414]
+                  - cell "Add Item" [ref=e415]:
+                    - textbox [ref=e417]:
+                      - /placeholder: Edit string...
+                      - text: Add Item
+                - row "showLeftIcon showLeftIcon" [ref=e418]:
+                  - cell "showLeftIcon" [ref=e419]
+                  - cell "showLeftIcon" [ref=e420]:
+                    - generic "showLeftIcon" [ref=e421]:
+                      - switch "showLeftIcon" [checked] [ref=e422] [cursor=pointer]
+                      - generic [ref=e423] [cursor=pointer]: "False"
+                      - generic [ref=e424] [cursor=pointer]: "True"
+                - row "variant variant Choose option..." [ref=e425]:
+                  - cell "variant" [ref=e426]
+                  - cell "variant Choose option..." [ref=e427]:
+                    - generic [ref=e428]:
                       - img
-                      - generic [ref=e417]: size
-                      - combobox "size" [ref=e418]:
-                        - option "Choose option..."
+                      - generic [ref=e429]: variant
+                      - combobox "variant" [ref=e430]:
+                        - option "Choose option..." [disabled] [selected]
+                        - option "primary"
+                        - option "secondary"
+                        - option "text"
+                - row "size size Choose option..." [ref=e431]:
+                  - cell "size" [ref=e432]
+                  - cell "size Choose option..." [ref=e433]:
+                    - generic [ref=e434]:
+                      - img
+                      - generic [ref=e435]: size
+                      - combobox "size" [ref=e436]:
+                        - option "Choose option..." [disabled] [selected]
                         - option "large"
                         - option "medium"
-                        - option "small" [selected]
-                - row "text Secondary Small" [ref=e419]:
-                  - cell "text" [ref=e420]
-                  - cell "Secondary Small" [ref=e421]:
-                    - textbox [ref=e423]:
-                      - /placeholder: Edit string...
-                      - text: Secondary Small
-                - row "state state Choose option..." [ref=e424]:
-                  - cell "state" [ref=e425]
-                  - cell "state Choose option..." [ref=e426]:
-                    - generic [ref=e427]:
+                        - option "small"
+                - row "state state Choose option..." [ref=e437]:
+                  - cell "state" [ref=e438]
+                  - cell "state Choose option..." [ref=e439]:
+                    - generic [ref=e440]:
                       - img
-                      - generic [ref=e428]: state
-                      - combobox "state" [ref=e429]:
+                      - generic [ref=e441]: state
+                      - combobox "state" [ref=e442]:
                         - option "Choose option..." [disabled] [selected]
                         - option "default"
                         - option "hover"
                         - option "onclick"
                         - option "focused"
                         - option "disabled"
-                - row "leftIcon leftIcon Choose option..." [ref=e430]:
-                  - cell "leftIcon" [ref=e431]
-                  - cell "leftIcon Choose option..." [ref=e432]:
-                    - generic [ref=e433]:
+                - row "rightIcon rightIcon Choose option..." [ref=e443]:
+                  - cell "rightIcon" [ref=e444]
+                  - cell "rightIcon Choose option..." [ref=e445]:
+                    - generic [ref=e446]:
                       - img
-                      - generic [ref=e434]: leftIcon
-                      - combobox "leftIcon" [ref=e435]:
+                      - generic [ref=e447]: rightIcon
+                      - combobox "rightIcon" [ref=e448]:
                         - option "Choose option..." [disabled] [selected]
                         - option "none"
                         - option "--- Default ---"
@@ -485,148 +626,10 @@ Received: 1
                         - option "Web"
                         - option "Windows Logo"
                         - option "World"
-                - row "rightIcon rightIcon Choose option..." [ref=e436]:
-                  - cell "rightIcon" [ref=e437]
-                  - cell "rightIcon Choose option..." [ref=e438]:
-                    - generic [ref=e439]:
-                      - img
-                      - generic [ref=e440]: rightIcon
-                      - combobox "rightIcon" [ref=e441]:
-                        - option "Choose option..." [disabled] [selected]
-                        - option "none"
-                        - option "--- Default ---"
-                        - option "Plus (Default)"
-                        - option "Default Left"
-                        - option "Default Right"
-                        - option "--- Assets ---"
-                        - option "Activity"
-                        - option "Android"
-                        - option "Android Logo"
-                        - option "Apple Logo"
-                        - option "Arrow Down"
-                        - option "Arrow Insert"
-                        - option "Arrow Left"
-                        - option "Arrow Outward"
-                        - option "Arrow Right"
-                        - option "Arrow Up"
-                        - option "Attachment"
-                        - option "Bank"
-                        - option "Bar Chart"
-                        - option "Bitcoin"
-                        - option "Book"
-                        - option "Brain"
-                        - option "Building"
-                        - option "Calendar"
-                        - option "Card"
-                        - option "Chat"
-                        - option "Check Circle"
-                        - option "Check Line"
-                        - option "Chevron Down"
-                        - option "Chevron Left"
-                        - option "Chevron Right"
-                        - option "Chevron Up"
-                        - option "Circles"
-                        - option "City"
-                        - option "Close"
-                        - option "Close Circle"
-                        - option "Configure"
-                        - option "Copy"
-                        - option "Cross Shield"
-                        - option "Crown"
-                        - option "Customize"
-                        - option "Decrease"
-                        - option "Desktop"
-                        - option "Dollar"
-                        - option "Dot"
-                        - option "Down Line"
-                        - option "Download"
-                        - option "Email"
-                        - option "External Link"
-                        - option "Eye Closed"
-                        - option "Eye Open"
-                        - option "File"
-                        - option "Fire"
-                        - option "Group"
-                        - option "Growth"
-                        - option "Headphone"
-                        - option "Home"
-                        - option "Inbox"
-                        - option "Info"
-                        - option "IOS"
-                        - option "IOS Logo"
-                        - option "Laptop"
-                        - option "Light Mode"
-                        - option "Link"
-                        - option "Lock"
-                        - option "Loss"
-                        - option "Magic"
-                        - option "Mail"
-                        - option "Map Point"
-                        - option "More Horizontal"
-                        - option "More Vertical"
-                        - option "Night Mode"
-                        - option "No Record"
-                        - option "Notification"
-                        - option "Pencil"
-                        - option "People"
-                        - option "Phone"
-                        - option "Phone 1"
-                        - option "Pie Chart"
-                        - option "Product Icon"
-                        - option "Profit"
-                        - option "Prohibition"
-                        - option "Question Mark"
-                        - option "React"
-                        - option "Refresh 1"
-                        - option "Refresh 2"
-                        - option "Repeat"
-                        - option "Reward"
-                        - option "Security"
-                        - option "Send"
-                        - option "Setting"
-                        - option "Share"
-                        - option "Shield"
-                        - option "Shield Check"
-                        - option "Sidebar Accounts"
-                        - option "Sidebar Analysis Hub"
-                        - option "Sidebar Certificates"
-                        - option "Sidebar Challenges"
-                        - option "Sidebar Collapse"
-                        - option "Sidebar Dashboard"
-                        - option "Sidebar Downloads"
-                        - option "Sidebar Expand"
-                        - option "Sidebar Kyc Verification"
-                        - option "Sidebar My Profile"
-                        - option "Sidebar Orders"
-                        - option "Sidebar Payouts"
-                        - option "Sidebar Points & Rewards"
-                        - option "Sidebar Search"
-                        - option "Sidebar Shortcut"
-                        - option "Sidebar Supports"
-                        - option "Sidebar Trading Tools"
-                        - option "Stack"
-                        - option "Star"
-                        - option "Star Filled"
-                        - option "Thunder"
-                        - option "Time"
-                        - option "Timer"
-                        - option "Tools"
-                        - option "Up Line"
-                        - option "Vite"
-                        - option "Wallet"
-                        - option "Warning Circle"
-                        - option "Warning Triangle"
-                        - option "Web"
-                        - option "Windows Logo"
-                        - option "World"
-                - row "showLeftIcon Set boolean" [ref=e442]:
-                  - cell "showLeftIcon" [ref=e443]
-                  - cell "Set boolean" [ref=e444]:
-                    - button "Set boolean" [ref=e445] [cursor=pointer]
-                - row "showRightIcon Set boolean" [ref=e446]:
-                  - cell "showRightIcon" [ref=e447]
-                  - cell "Set boolean" [ref=e448]:
-                    - button "Set boolean" [ref=e449] [cursor=pointer]
+                - row "showRightIcon Set boolean" [ref=e449]:
+                  - cell "showRightIcon" [ref=e450]
+                  - cell "Set boolean" [ref=e451]:
+                    - button "Set boolean" [ref=e452] [cursor=pointer]
 ```
 
 # Test source

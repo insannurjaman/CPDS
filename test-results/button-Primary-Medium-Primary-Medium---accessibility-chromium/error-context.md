@@ -6,7 +6,7 @@
 
 # Test info
 
-- Name: button.spec.js >> Secondary Small >> Secondary Small - accessibility
+- Name: button.spec.js >> Primary Medium >> Primary Medium - accessibility
 - Location: tests/button.spec.js:23:5
 
 # Error details
@@ -111,29 +111,29 @@ Received: 1
                 - /url: /?path=/story/components-button--primary-large
                 - img [ref=e133]
                 - text: Primary Large
-              - link "Primary Medium" [ref=e136] [cursor=pointer]:
-                - /url: /?path=/story/components-button--primary-medium
-                - img [ref=e138]
-                - text: Primary Medium
-              - link "Primary Small" [ref=e141] [cursor=pointer]:
-                - /url: /?path=/story/components-button--primary-small
-                - img [ref=e143]
-                - text: Primary Small
-              - link "Secondary Large" [ref=e146] [cursor=pointer]:
-                - /url: /?path=/story/components-button--secondary-large
-                - img [ref=e148]
-                - text: Secondary Large
-              - link "Secondary Medium" [ref=e151] [cursor=pointer]:
-                - /url: /?path=/story/components-button--secondary-medium
-                - img [ref=e153]
-                - text: Secondary Medium
-              - generic [ref=e155]:
-                - link "Secondary Small" [ref=e156] [cursor=pointer]:
-                  - /url: /?path=/story/components-button--secondary-small
-                  - img [ref=e158]
-                  - text: Secondary Small
-                - link "Skip to content" [ref=e160] [cursor=pointer]:
+              - generic [ref=e135]:
+                - link "Primary Medium" [ref=e136] [cursor=pointer]:
+                  - /url: /?path=/story/components-button--primary-medium
+                  - img [ref=e138]
+                  - text: Primary Medium
+                - link "Skip to content" [ref=e140] [cursor=pointer]:
                   - /url: "#storybook-preview-wrapper"
+              - link "Primary Small" [ref=e142] [cursor=pointer]:
+                - /url: /?path=/story/components-button--primary-small
+                - img [ref=e144]
+                - text: Primary Small
+              - link "Secondary Large" [ref=e147] [cursor=pointer]:
+                - /url: /?path=/story/components-button--secondary-large
+                - img [ref=e149]
+                - text: Secondary Large
+              - link "Secondary Medium" [ref=e152] [cursor=pointer]:
+                - /url: /?path=/story/components-button--secondary-medium
+                - img [ref=e154]
+                - text: Secondary Medium
+              - link "Secondary Small" [ref=e157] [cursor=pointer]:
+                - /url: /?path=/story/components-button--secondary-small
+                - img [ref=e159]
+                - text: Secondary Small
               - link "Text Large" [ref=e162] [cursor=pointer]:
                 - /url: /?path=/story/components-button--text-large
                 - img [ref=e164]
@@ -260,16 +260,16 @@ Received: 1
       - heading "Main preview area" [level=2] [ref=e339]
       - generic [ref=e341]:
         - link "Skip to sidebar" [ref=e342] [cursor=pointer]:
-          - /url: "#components-button--secondary-small"
+          - /url: "#components-button--primary-medium"
         - iframe [ref=e346]:
           - generic [ref=f1e5]:
             - generic [ref=f1e7]:
               - generic [ref=f1e8]:
-                - paragraph [ref=f1e9]: Secondary Small
+                - paragraph [ref=f1e9]: Primary Medium
                 - paragraph [ref=f1e10]: Preview inside the current Storybook brand/theme page
               - generic [ref=f1e11]: Page preview
-            - button "Secondary Small" [ref=f1e13] [cursor=pointer]:
-              - generic [ref=f1e15]: Secondary Small
+            - button "Primary Medium" [ref=f1e13] [cursor=pointer]:
+              - generic [ref=f1e15]: Primary Medium
   - generic [ref=e347]:
     - separator "Addon panel resize handle" [ref=e348]
     - region "Addon panel" [ref=e350]:
@@ -294,70 +294,68 @@ Received: 1
               - tab "Interactions" [ref=e377] [cursor=pointer]:
                 - generic [ref=e379]: Interactions
               - tab "Visual tests" [ref=e380] [cursor=pointer]
-              - tab "Accessibility 1" [ref=e381] [cursor=pointer]:
-                - generic [ref=e382]:
-                  - generic [ref=e383]: Accessibility
-                  - generic [ref=e384]: "1"
-            - button "Scroll forward" [ref=e386] [cursor=pointer]:
-              - img [ref=e387]
-        - tabpanel "Controls 8" [ref=e389]:
-          - generic [ref=e396]:
-            - button "Reset controls" [ref=e398] [cursor=pointer]:
-              - img [ref=e399]
-            - table [ref=e401]:
-              - rowgroup [ref=e402]:
-                - row "Name Control" [ref=e403]:
-                  - columnheader "Name" [ref=e404]
-                  - columnheader "Control" [ref=e405]
-              - rowgroup [ref=e406]:
-                - row "variant variant secondary" [ref=e407]:
-                  - cell "variant" [ref=e408]
-                  - cell "variant secondary" [ref=e409]:
-                    - generic [ref=e410]:
+              - tab "Accessibility" [ref=e381] [cursor=pointer]:
+                - generic [ref=e383]: Accessibility
+            - button "Scroll forward" [ref=e385] [cursor=pointer]:
+              - img [ref=e386]
+        - tabpanel "Controls 8" [ref=e388]:
+          - generic [ref=e395]:
+            - button "Reset controls" [ref=e397] [cursor=pointer]:
+              - img [ref=e398]
+            - table [ref=e400]:
+              - rowgroup [ref=e401]:
+                - row "Name Control" [ref=e402]:
+                  - columnheader "Name" [ref=e403]
+                  - columnheader "Control" [ref=e404]
+              - rowgroup [ref=e405]:
+                - row "variant variant primary" [ref=e406]:
+                  - cell "variant" [ref=e407]
+                  - cell "variant primary" [ref=e408]:
+                    - generic [ref=e409]:
                       - img
-                      - generic [ref=e411]: variant
-                      - combobox "variant" [ref=e412]:
+                      - generic [ref=e410]: variant
+                      - combobox "variant" [ref=e411]:
                         - option "Choose option..."
-                        - option "primary"
-                        - option "secondary" [selected]
+                        - option "primary" [selected]
+                        - option "secondary"
                         - option "text"
-                - row "size size small" [ref=e413]:
-                  - cell "size" [ref=e414]
-                  - cell "size small" [ref=e415]:
-                    - generic [ref=e416]:
+                - row "size size medium" [ref=e412]:
+                  - cell "size" [ref=e413]
+                  - cell "size medium" [ref=e414]:
+                    - generic [ref=e415]:
                       - img
-                      - generic [ref=e417]: size
-                      - combobox "size" [ref=e418]:
+                      - generic [ref=e416]: size
+                      - combobox "size" [ref=e417]:
                         - option "Choose option..."
                         - option "large"
-                        - option "medium"
-                        - option "small" [selected]
-                - row "text Secondary Small" [ref=e419]:
-                  - cell "text" [ref=e420]
-                  - cell "Secondary Small" [ref=e421]:
-                    - textbox [ref=e423]:
+                        - option "medium" [selected]
+                        - option "small"
+                - row "text Primary Medium" [ref=e418]:
+                  - cell "text" [ref=e419]
+                  - cell "Primary Medium" [ref=e420]:
+                    - textbox [ref=e422]:
                       - /placeholder: Edit string...
-                      - text: Secondary Small
-                - row "state state Choose option..." [ref=e424]:
-                  - cell "state" [ref=e425]
-                  - cell "state Choose option..." [ref=e426]:
-                    - generic [ref=e427]:
+                      - text: Primary Medium
+                - row "state state Choose option..." [ref=e423]:
+                  - cell "state" [ref=e424]
+                  - cell "state Choose option..." [ref=e425]:
+                    - generic [ref=e426]:
                       - img
-                      - generic [ref=e428]: state
-                      - combobox "state" [ref=e429]:
+                      - generic [ref=e427]: state
+                      - combobox "state" [ref=e428]:
                         - option "Choose option..." [disabled] [selected]
                         - option "default"
                         - option "hover"
                         - option "onclick"
                         - option "focused"
                         - option "disabled"
-                - row "leftIcon leftIcon Choose option..." [ref=e430]:
-                  - cell "leftIcon" [ref=e431]
-                  - cell "leftIcon Choose option..." [ref=e432]:
-                    - generic [ref=e433]:
+                - row "leftIcon leftIcon Choose option..." [ref=e429]:
+                  - cell "leftIcon" [ref=e430]
+                  - cell "leftIcon Choose option..." [ref=e431]:
+                    - generic [ref=e432]:
                       - img
-                      - generic [ref=e434]: leftIcon
-                      - combobox "leftIcon" [ref=e435]:
+                      - generic [ref=e433]: leftIcon
+                      - combobox "leftIcon" [ref=e434]:
                         - option "Choose option..." [disabled] [selected]
                         - option "none"
                         - option "--- Default ---"
@@ -485,13 +483,13 @@ Received: 1
                         - option "Web"
                         - option "Windows Logo"
                         - option "World"
-                - row "rightIcon rightIcon Choose option..." [ref=e436]:
-                  - cell "rightIcon" [ref=e437]
-                  - cell "rightIcon Choose option..." [ref=e438]:
-                    - generic [ref=e439]:
+                - row "rightIcon rightIcon Choose option..." [ref=e435]:
+                  - cell "rightIcon" [ref=e436]
+                  - cell "rightIcon Choose option..." [ref=e437]:
+                    - generic [ref=e438]:
                       - img
-                      - generic [ref=e440]: rightIcon
-                      - combobox "rightIcon" [ref=e441]:
+                      - generic [ref=e439]: rightIcon
+                      - combobox "rightIcon" [ref=e440]:
                         - option "Choose option..." [disabled] [selected]
                         - option "none"
                         - option "--- Default ---"
@@ -619,14 +617,14 @@ Received: 1
                         - option "Web"
                         - option "Windows Logo"
                         - option "World"
-                - row "showLeftIcon Set boolean" [ref=e442]:
-                  - cell "showLeftIcon" [ref=e443]
-                  - cell "Set boolean" [ref=e444]:
-                    - button "Set boolean" [ref=e445] [cursor=pointer]
-                - row "showRightIcon Set boolean" [ref=e446]:
-                  - cell "showRightIcon" [ref=e447]
-                  - cell "Set boolean" [ref=e448]:
-                    - button "Set boolean" [ref=e449] [cursor=pointer]
+                - row "showLeftIcon Set boolean" [ref=e441]:
+                  - cell "showLeftIcon" [ref=e442]
+                  - cell "Set boolean" [ref=e443]:
+                    - button "Set boolean" [ref=e444] [cursor=pointer]
+                - row "showRightIcon Set boolean" [ref=e445]:
+                  - cell "showRightIcon" [ref=e446]
+                  - cell "Set boolean" [ref=e447]:
+                    - button "Set boolean" [ref=e448] [cursor=pointer]
 ```
 
 # Test source

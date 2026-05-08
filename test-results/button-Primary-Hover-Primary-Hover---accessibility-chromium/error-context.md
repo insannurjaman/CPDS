@@ -6,16 +6,18 @@
 
 # Test info
 
-- Name: button.spec.js >> Secondary Small >> Secondary Small - accessibility
+- Name: button.spec.js >> Primary Hover >> Primary Hover - accessibility
 - Location: tests/button.spec.js:23:5
 
 # Error details
 
 ```
-Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: 0
-Received: 1
+Error: frame.evaluate: Error: Axe is already running. Use `await axe.run()` to wait for the previous run to finish before starting a new run.
+    at assert (http://localhost:6007/node_modules/axe-core/axe.js?v=c2cdcbe8:7273:15)
+    at Object.run4 [as run] (http://localhost:6007/node_modules/axe-core/axe.js?v=c2cdcbe8:29296:9)
+    at eval (eval at evaluate (:302:30), <anonymous>:1:30)
+    at UtilityScript.evaluate (<anonymous>:304:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
 ```
 
 # Page snapshot
@@ -127,29 +129,29 @@ Received: 1
                 - /url: /?path=/story/components-button--secondary-medium
                 - img [ref=e153]
                 - text: Secondary Medium
-              - generic [ref=e155]:
-                - link "Secondary Small" [ref=e156] [cursor=pointer]:
-                  - /url: /?path=/story/components-button--secondary-small
-                  - img [ref=e158]
-                  - text: Secondary Small
-                - link "Skip to content" [ref=e160] [cursor=pointer]:
-                  - /url: "#storybook-preview-wrapper"
-              - link "Text Large" [ref=e162] [cursor=pointer]:
+              - link "Secondary Small" [ref=e156] [cursor=pointer]:
+                - /url: /?path=/story/components-button--secondary-small
+                - img [ref=e158]
+                - text: Secondary Small
+              - link "Text Large" [ref=e161] [cursor=pointer]:
                 - /url: /?path=/story/components-button--text-large
-                - img [ref=e164]
+                - img [ref=e163]
                 - text: Text Large
-              - link "Text Medium" [ref=e167] [cursor=pointer]:
+              - link "Text Medium" [ref=e166] [cursor=pointer]:
                 - /url: /?path=/story/components-button--text-medium
-                - img [ref=e169]
+                - img [ref=e168]
                 - text: Text Medium
-              - link "Text Small" [ref=e172] [cursor=pointer]:
+              - link "Text Small" [ref=e171] [cursor=pointer]:
                 - /url: /?path=/story/components-button--text-small
-                - img [ref=e174]
+                - img [ref=e173]
                 - text: Text Small
-              - link "Primary Hover" [ref=e177] [cursor=pointer]:
-                - /url: /?path=/story/components-button--primary-hover
-                - img [ref=e179]
-                - text: Primary Hover
+              - generic [ref=e175]:
+                - link "Primary Hover" [ref=e176] [cursor=pointer]:
+                  - /url: /?path=/story/components-button--primary-hover
+                  - img [ref=e178]
+                  - text: Primary Hover
+                - link "Skip to content" [ref=e180] [cursor=pointer]:
+                  - /url: "#storybook-preview-wrapper"
               - link "Primary On Click" [ref=e182] [cursor=pointer]:
                 - /url: /?path=/story/components-button--primary-on-click
                 - img [ref=e184]
@@ -260,16 +262,16 @@ Received: 1
       - heading "Main preview area" [level=2] [ref=e339]
       - generic [ref=e341]:
         - link "Skip to sidebar" [ref=e342] [cursor=pointer]:
-          - /url: "#components-button--secondary-small"
+          - /url: "#components-button--primary-hover"
         - iframe [ref=e346]:
           - generic [ref=f1e5]:
             - generic [ref=f1e7]:
               - generic [ref=f1e8]:
-                - paragraph [ref=f1e9]: Secondary Small
+                - paragraph [ref=f1e9]: Primary Large
                 - paragraph [ref=f1e10]: Preview inside the current Storybook brand/theme page
               - generic [ref=f1e11]: Page preview
-            - button "Secondary Small" [ref=f1e13] [cursor=pointer]:
-              - generic [ref=f1e15]: Secondary Small
+            - button "Primary Hover" [ref=f1e13] [cursor=pointer]:
+              - generic [ref=f1e15]: Primary Hover
   - generic [ref=e347]:
     - separator "Addon panel resize handle" [ref=e348]
     - region "Addon panel" [ref=e350]:
@@ -294,70 +296,68 @@ Received: 1
               - tab "Interactions" [ref=e377] [cursor=pointer]:
                 - generic [ref=e379]: Interactions
               - tab "Visual tests" [ref=e380] [cursor=pointer]
-              - tab "Accessibility 1" [ref=e381] [cursor=pointer]:
-                - generic [ref=e382]:
-                  - generic [ref=e383]: Accessibility
-                  - generic [ref=e384]: "1"
-            - button "Scroll forward" [ref=e386] [cursor=pointer]:
-              - img [ref=e387]
-        - tabpanel "Controls 8" [ref=e389]:
-          - generic [ref=e396]:
-            - button "Reset controls" [ref=e398] [cursor=pointer]:
-              - img [ref=e399]
-            - table [ref=e401]:
-              - rowgroup [ref=e402]:
-                - row "Name Control" [ref=e403]:
-                  - columnheader "Name" [ref=e404]
-                  - columnheader "Control" [ref=e405]
-              - rowgroup [ref=e406]:
-                - row "variant variant secondary" [ref=e407]:
-                  - cell "variant" [ref=e408]
-                  - cell "variant secondary" [ref=e409]:
-                    - generic [ref=e410]:
+              - tab "Accessibility" [ref=e381] [cursor=pointer]:
+                - generic [ref=e383]: Accessibility
+            - button "Scroll forward" [ref=e385] [cursor=pointer]:
+              - img [ref=e386]
+        - tabpanel "Controls 8" [ref=e388]:
+          - generic [ref=e395]:
+            - button "Reset controls" [ref=e397] [cursor=pointer]:
+              - img [ref=e398]
+            - table [ref=e400]:
+              - rowgroup [ref=e401]:
+                - row "Name Control" [ref=e402]:
+                  - columnheader "Name" [ref=e403]
+                  - columnheader "Control" [ref=e404]
+              - rowgroup [ref=e405]:
+                - row "variant variant primary" [ref=e406]:
+                  - cell "variant" [ref=e407]
+                  - cell "variant primary" [ref=e408]:
+                    - generic [ref=e409]:
                       - img
-                      - generic [ref=e411]: variant
-                      - combobox "variant" [ref=e412]:
+                      - generic [ref=e410]: variant
+                      - combobox "variant" [ref=e411]:
                         - option "Choose option..."
-                        - option "primary"
-                        - option "secondary" [selected]
+                        - option "primary" [selected]
+                        - option "secondary"
                         - option "text"
-                - row "size size small" [ref=e413]:
-                  - cell "size" [ref=e414]
-                  - cell "size small" [ref=e415]:
-                    - generic [ref=e416]:
+                - row "size size large" [ref=e412]:
+                  - cell "size" [ref=e413]
+                  - cell "size large" [ref=e414]:
+                    - generic [ref=e415]:
                       - img
-                      - generic [ref=e417]: size
-                      - combobox "size" [ref=e418]:
+                      - generic [ref=e416]: size
+                      - combobox "size" [ref=e417]:
                         - option "Choose option..."
-                        - option "large"
+                        - option "large" [selected]
                         - option "medium"
-                        - option "small" [selected]
-                - row "text Secondary Small" [ref=e419]:
-                  - cell "text" [ref=e420]
-                  - cell "Secondary Small" [ref=e421]:
-                    - textbox [ref=e423]:
-                      - /placeholder: Edit string...
-                      - text: Secondary Small
-                - row "state state Choose option..." [ref=e424]:
-                  - cell "state" [ref=e425]
-                  - cell "state Choose option..." [ref=e426]:
-                    - generic [ref=e427]:
+                        - option "small"
+                - row "state state hover" [ref=e418]:
+                  - cell "state" [ref=e419]
+                  - cell "state hover" [ref=e420]:
+                    - generic [ref=e421]:
                       - img
-                      - generic [ref=e428]: state
-                      - combobox "state" [ref=e429]:
-                        - option "Choose option..." [disabled] [selected]
+                      - generic [ref=e422]: state
+                      - combobox "state" [ref=e423]:
+                        - option "Choose option..."
                         - option "default"
-                        - option "hover"
+                        - option "hover" [selected]
                         - option "onclick"
                         - option "focused"
                         - option "disabled"
-                - row "leftIcon leftIcon Choose option..." [ref=e430]:
-                  - cell "leftIcon" [ref=e431]
-                  - cell "leftIcon Choose option..." [ref=e432]:
-                    - generic [ref=e433]:
+                - row "text Primary Hover" [ref=e424]:
+                  - cell "text" [ref=e425]
+                  - cell "Primary Hover" [ref=e426]:
+                    - textbox [ref=e428]:
+                      - /placeholder: Edit string...
+                      - text: Primary Hover
+                - row "leftIcon leftIcon Choose option..." [ref=e429]:
+                  - cell "leftIcon" [ref=e430]
+                  - cell "leftIcon Choose option..." [ref=e431]:
+                    - generic [ref=e432]:
                       - img
-                      - generic [ref=e434]: leftIcon
-                      - combobox "leftIcon" [ref=e435]:
+                      - generic [ref=e433]: leftIcon
+                      - combobox "leftIcon" [ref=e434]:
                         - option "Choose option..." [disabled] [selected]
                         - option "none"
                         - option "--- Default ---"
@@ -485,13 +485,13 @@ Received: 1
                         - option "Web"
                         - option "Windows Logo"
                         - option "World"
-                - row "rightIcon rightIcon Choose option..." [ref=e436]:
-                  - cell "rightIcon" [ref=e437]
-                  - cell "rightIcon Choose option..." [ref=e438]:
-                    - generic [ref=e439]:
+                - row "rightIcon rightIcon Choose option..." [ref=e435]:
+                  - cell "rightIcon" [ref=e436]
+                  - cell "rightIcon Choose option..." [ref=e437]:
+                    - generic [ref=e438]:
                       - img
-                      - generic [ref=e440]: rightIcon
-                      - combobox "rightIcon" [ref=e441]:
+                      - generic [ref=e439]: rightIcon
+                      - combobox "rightIcon" [ref=e440]:
                         - option "Choose option..." [disabled] [selected]
                         - option "none"
                         - option "--- Default ---"
@@ -619,78 +619,12 @@ Received: 1
                         - option "Web"
                         - option "Windows Logo"
                         - option "World"
-                - row "showLeftIcon Set boolean" [ref=e442]:
-                  - cell "showLeftIcon" [ref=e443]
-                  - cell "Set boolean" [ref=e444]:
-                    - button "Set boolean" [ref=e445] [cursor=pointer]
-                - row "showRightIcon Set boolean" [ref=e446]:
-                  - cell "showRightIcon" [ref=e447]
-                  - cell "Set boolean" [ref=e448]:
-                    - button "Set boolean" [ref=e449] [cursor=pointer]
-```
-
-# Test source
-
-```ts
-  1  | import { test, expect } from '@playwright/test'
-  2  | 
-  3  | const stories = [
-  4  |   { id: 'components-button--primary-large', name: 'Primary Large' },
-  5  |   { id: 'components-button--primary-medium', name: 'Primary Medium' },
-  6  |   { id: 'components-button--primary-small', name: 'Primary Small' },
-  7  |   { id: 'components-button--secondary-large', name: 'Secondary Large' },
-  8  |   { id: 'components-button--secondary-medium', name: 'Secondary Medium' },
-  9  |   { id: 'components-button--secondary-small', name: 'Secondary Small' },
-  10 |   { id: 'components-button--text-large', name: 'Text Large' },
-  11 |   { id: 'components-button--text-medium', name: 'Text Medium' },
-  12 |   { id: 'components-button--text-small', name: 'Text Small' },
-  13 |   { id: 'components-button--primary-hover', name: 'Primary Hover' },
-  14 |   { id: 'components-button--primary-on-click', name: 'Primary On Click' },
-  15 |   { id: 'components-button--primary-disabled', name: 'Primary Disabled' },
-  16 |   { id: 'components-button--with-left-icon', name: 'With Left Icon' },
-  17 |   { id: 'components-button--with-right-icon', name: 'With Right Icon' },
-  18 |   { id: 'components-button--with-both-icons', name: 'With Both Icons' },
-  19 | ]
-  20 | 
-  21 | for (const s of stories) {
-  22 |   test.describe(s.name, () => {
-  23 |     test(`${s.name} - accessibility`, async ({ page }) => {
-  24 |       const url = `http://localhost:6007/?path=/story/${s.id}`
-  25 |       await page.goto(url)
-  26 | 
-  27 |       // wait for preview iframe and the story to load
-  28 |       const iframeHandle = await page.waitForSelector('iframe#storybook-preview-iframe', { timeout: 20000 })
-  29 |       const frame = await iframeHandle.contentFrame()
-  30 |       if (!frame) throw new Error('Preview frame not found')
-  31 | 
-  32 |       // For disabled buttons, we use div instead of button
-  33 |       const elementSelector = s.name.includes('Disabled') ? '#storybook-root div' : '#storybook-root button'
-  34 |       const btnLocator = frame.locator(elementSelector).first()
-  35 |       await btnLocator.waitFor({ state: 'visible', timeout: 20000 })
-  36 | 
-  37 |       // inject axe into the preview frame and run accessibility checks against the story root only
-  38 |       await frame.addScriptTag({ url: 'https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.8.0/axe.min.js' })
-  39 |       const result = await frame.evaluate(async () => await window.axe.run(document.querySelector('#storybook-root')))
-  40 |       if (result.violations && result.violations.length > 0) {
-  41 |         console.error('Axe violations:', JSON.stringify(result.violations, null, 2))
-  42 |       }
-> 43 |       expect(result.violations.length).toBe(0)
-     |                                        ^ Error: expect(received).toBe(expected) // Object.is equality
-  44 |     })
-  45 | 
-  46 |     test(`${s.name} - visual`, async ({ page }) => {
-  47 |       const url = `http://localhost:6007/?path=/story/${s.id}`
-  48 |       await page.goto(url)
-  49 |       await page.waitForSelector('iframe#storybook-preview-iframe', { timeout: 20000 })
-  50 |       const frameLocator2 = page.frameLocator('iframe#storybook-preview-iframe')
-  51 | 
-  52 |       // For disabled buttons, we use div instead of button
-  53 |       const elementSelector = s.name.includes('Disabled') ? '#storybook-root div' : '#storybook-root button'
-  54 |       const btnLocator2 = frameLocator2.locator(elementSelector).first()
-  55 |       await btnLocator2.waitFor({ state: 'visible', timeout: 20000 })
-  56 |       await expect(btnLocator2).toHaveScreenshot(`button-${s.id}.png`)
-  57 |     })
-  58 |   })
-  59 | }
-  60 | 
+                - row "showLeftIcon Set boolean" [ref=e441]:
+                  - cell "showLeftIcon" [ref=e442]
+                  - cell "Set boolean" [ref=e443]:
+                    - button "Set boolean" [ref=e444] [cursor=pointer]
+                - row "showRightIcon Set boolean" [ref=e445]:
+                  - cell "showRightIcon" [ref=e446]
+                  - cell "Set boolean" [ref=e447]:
+                    - button "Set boolean" [ref=e448] [cursor=pointer]
 ```

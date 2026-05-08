@@ -66,30 +66,30 @@
 
 /* Variant styles */
 .button--primary {
-	background: var(--color-semantic-background-bg-brand-soft);
-	border-color: var(--color-semantic-border-border-brand-soft);
-	color: var(--color-semantic-text-text-brand-primary);
+	background: var(--color-brand-primary);
+	border-color: var(--color-brand-primary);
+	color: var(--color-brand-on-primary);
 }
 
 .button--secondary {
-	background: var(--color-semantic-background-bg-dark);
+	background: var(--color-background-surface);
 	border-color: var(--color-semantic-border-border-default);
-	color: var(--color-semantic-text-text-secondary);
+	color: var(--color-text-secondary);
 }
 
 .button--text {
 	background: transparent;
 	border-color: transparent;
-	color: var(--color-semantic-text-text-brand-primary);
+	color: var(--color-brand-primary);
 }
 
 /* State styles */
 .button--state-hover.button--primary {
-	background: var(--color-semantic-background-bg-brand);
+	filter: brightness(1.05);
 }
 
 .button--state-hover.button--secondary {
-	background: var(--color-semantic-background-bg-brand-soft);
+	background: rgba(255, 255, 255, 0.08);
 }
 
 .button--state-hover.button--text {
@@ -103,7 +103,7 @@
 
 .button--state-focused,
 .button:focus-visible {
-	outline: 2px solid var(--color-semantic-brand-primary);
+	outline: 2px solid var(--color-brand-primary);
 	outline-offset: 2px;
 }
 

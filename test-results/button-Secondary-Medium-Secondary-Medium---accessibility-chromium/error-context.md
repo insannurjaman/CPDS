@@ -6,7 +6,7 @@
 
 # Test info
 
-- Name: button.spec.js >> Secondary Small >> Secondary Small - accessibility
+- Name: button.spec.js >> Secondary Medium >> Secondary Medium - accessibility
 - Location: tests/button.spec.js:23:5
 
 # Error details
@@ -123,17 +123,17 @@ Received: 1
                 - /url: /?path=/story/components-button--secondary-large
                 - img [ref=e148]
                 - text: Secondary Large
-              - link "Secondary Medium" [ref=e151] [cursor=pointer]:
-                - /url: /?path=/story/components-button--secondary-medium
-                - img [ref=e153]
-                - text: Secondary Medium
-              - generic [ref=e155]:
-                - link "Secondary Small" [ref=e156] [cursor=pointer]:
-                  - /url: /?path=/story/components-button--secondary-small
-                  - img [ref=e158]
-                  - text: Secondary Small
-                - link "Skip to content" [ref=e160] [cursor=pointer]:
+              - generic [ref=e150]:
+                - link "Secondary Medium" [ref=e151] [cursor=pointer]:
+                  - /url: /?path=/story/components-button--secondary-medium
+                  - img [ref=e153]
+                  - text: Secondary Medium
+                - link "Skip to content" [ref=e155] [cursor=pointer]:
                   - /url: "#storybook-preview-wrapper"
+              - link "Secondary Small" [ref=e157] [cursor=pointer]:
+                - /url: /?path=/story/components-button--secondary-small
+                - img [ref=e159]
+                - text: Secondary Small
               - link "Text Large" [ref=e162] [cursor=pointer]:
                 - /url: /?path=/story/components-button--text-large
                 - img [ref=e164]
@@ -260,16 +260,16 @@ Received: 1
       - heading "Main preview area" [level=2] [ref=e339]
       - generic [ref=e341]:
         - link "Skip to sidebar" [ref=e342] [cursor=pointer]:
-          - /url: "#components-button--secondary-small"
+          - /url: "#components-button--secondary-medium"
         - iframe [ref=e346]:
           - generic [ref=f1e5]:
             - generic [ref=f1e7]:
               - generic [ref=f1e8]:
-                - paragraph [ref=f1e9]: Secondary Small
+                - paragraph [ref=f1e9]: Secondary Medium
                 - paragraph [ref=f1e10]: Preview inside the current Storybook brand/theme page
               - generic [ref=f1e11]: Page preview
-            - button "Secondary Small" [ref=f1e13] [cursor=pointer]:
-              - generic [ref=f1e15]: Secondary Small
+            - button "Secondary Medium" [ref=f1e13] [cursor=pointer]:
+              - generic [ref=f1e15]: Secondary Medium
   - generic [ref=e347]:
     - separator "Addon panel resize handle" [ref=e348]
     - region "Addon panel" [ref=e350]:
@@ -321,23 +321,23 @@ Received: 1
                         - option "primary"
                         - option "secondary" [selected]
                         - option "text"
-                - row "size size small" [ref=e413]:
+                - row "size size medium" [ref=e413]:
                   - cell "size" [ref=e414]
-                  - cell "size small" [ref=e415]:
+                  - cell "size medium" [ref=e415]:
                     - generic [ref=e416]:
                       - img
                       - generic [ref=e417]: size
                       - combobox "size" [ref=e418]:
                         - option "Choose option..."
                         - option "large"
-                        - option "medium"
-                        - option "small" [selected]
-                - row "text Secondary Small" [ref=e419]:
+                        - option "medium" [selected]
+                        - option "small"
+                - row "text Secondary Medium" [ref=e419]:
                   - cell "text" [ref=e420]
-                  - cell "Secondary Small" [ref=e421]:
+                  - cell "Secondary Medium" [ref=e421]:
                     - textbox [ref=e423]:
                       - /placeholder: Edit string...
-                      - text: Secondary Small
+                      - text: Secondary Medium
                 - row "state state Choose option..." [ref=e424]:
                   - cell "state" [ref=e425]
                   - cell "state Choose option..." [ref=e426]:

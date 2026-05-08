@@ -1,5 +1,5 @@
 import './Button.css'
-import { leftIcon as defaultLeftIcon, rightIcon as defaultRightIcon } from './icons'
+import { defaultIcon } from './icons'
 
 function normalize(v) {
   if (!v) return ''
@@ -43,7 +43,7 @@ function Button(props) {
     >
       {showLeftIcon && (
         <span className={`button__icon button__icon--left button__icon--${sizeKey}`} aria-hidden>
-          {leftIcon ? (typeof leftIcon === 'string' ? <img src={leftIcon} alt="" /> : leftIcon) : <img src={defaultLeftIcon} alt="" />}
+          {leftIcon ? (typeof leftIcon === 'string' ? <img src={leftIcon} alt="" /> : leftIcon) : <img src={defaultIcon} alt="" />}
         </span>
       )}
 
@@ -51,7 +51,7 @@ function Button(props) {
 
       {showRightIcon && (
         <span className={`button__icon button__icon--right button__icon--${sizeKey}`} aria-hidden>
-          {rightIcon ? (typeof rightIcon === 'string' ? <img src={rightIcon} alt="" /> : rightIcon) : <img src={defaultRightIcon} alt="" />}
+          {rightIcon ? (typeof rightIcon === 'string' ? <img src={rightIcon} alt="" /> : rightIcon) : <img src={defaultIcon} alt="" />}
         </span>
       )}
     </button>

@@ -21,7 +21,7 @@ const stories = [
 for (const s of stories) {
   test.describe(s.name, () => {
     test(`${s.name} - accessibility`, async ({ page }) => {
-      const url = `http://localhost:6008/?path=/story/${s.id}`
+      const url = `http://localhost:6007/?path=/story/${s.id}`
       await page.goto(url)
 
       // wait for preview iframe and the story to load
@@ -44,7 +44,7 @@ for (const s of stories) {
     })
 
     test(`${s.name} - visual`, async ({ page }) => {
-      const url = `http://localhost:6008/?path=/story/${s.id}`
+      const url = `http://localhost:6007/?path=/story/${s.id}`
       await page.goto(url)
       await page.waitForSelector('iframe#storybook-preview-iframe', { timeout: 20000 })
       const frameLocator2 = page.frameLocator('iframe#storybook-preview-iframe')

@@ -6,7 +6,7 @@
 
 # Test info
 
-- Name: button.spec.js >> Secondary Small >> Secondary Small - accessibility
+- Name: button.spec.js >> Text Small >> Text Small - accessibility
 - Location: tests/button.spec.js:23:5
 
 # Error details
@@ -127,25 +127,25 @@ Received: 1
                 - /url: /?path=/story/components-button--secondary-medium
                 - img [ref=e153]
                 - text: Secondary Medium
-              - generic [ref=e155]:
-                - link "Secondary Small" [ref=e156] [cursor=pointer]:
-                  - /url: /?path=/story/components-button--secondary-small
-                  - img [ref=e158]
-                  - text: Secondary Small
-                - link "Skip to content" [ref=e160] [cursor=pointer]:
-                  - /url: "#storybook-preview-wrapper"
-              - link "Text Large" [ref=e162] [cursor=pointer]:
+              - link "Secondary Small" [ref=e156] [cursor=pointer]:
+                - /url: /?path=/story/components-button--secondary-small
+                - img [ref=e158]
+                - text: Secondary Small
+              - link "Text Large" [ref=e161] [cursor=pointer]:
                 - /url: /?path=/story/components-button--text-large
-                - img [ref=e164]
+                - img [ref=e163]
                 - text: Text Large
-              - link "Text Medium" [ref=e167] [cursor=pointer]:
+              - link "Text Medium" [ref=e166] [cursor=pointer]:
                 - /url: /?path=/story/components-button--text-medium
-                - img [ref=e169]
+                - img [ref=e168]
                 - text: Text Medium
-              - link "Text Small" [ref=e172] [cursor=pointer]:
-                - /url: /?path=/story/components-button--text-small
-                - img [ref=e174]
-                - text: Text Small
+              - generic [ref=e170]:
+                - link "Text Small" [ref=e171] [cursor=pointer]:
+                  - /url: /?path=/story/components-button--text-small
+                  - img [ref=e173]
+                  - text: Text Small
+                - link "Skip to content" [ref=e175] [cursor=pointer]:
+                  - /url: "#storybook-preview-wrapper"
               - link "Primary Hover" [ref=e177] [cursor=pointer]:
                 - /url: /?path=/story/components-button--primary-hover
                 - img [ref=e179]
@@ -260,16 +260,16 @@ Received: 1
       - heading "Main preview area" [level=2] [ref=e339]
       - generic [ref=e341]:
         - link "Skip to sidebar" [ref=e342] [cursor=pointer]:
-          - /url: "#components-button--secondary-small"
+          - /url: "#components-button--text-small"
         - iframe [ref=e346]:
           - generic [ref=f1e5]:
             - generic [ref=f1e7]:
               - generic [ref=f1e8]:
-                - paragraph [ref=f1e9]: Secondary Small
+                - paragraph [ref=f1e9]: Text Small
                 - paragraph [ref=f1e10]: Preview inside the current Storybook brand/theme page
               - generic [ref=f1e11]: Page preview
-            - button "Secondary Small" [ref=f1e13] [cursor=pointer]:
-              - generic [ref=f1e15]: Secondary Small
+            - button "Text Small" [ref=f1e13] [cursor=pointer]:
+              - generic [ref=f1e15]: Text Small
   - generic [ref=e347]:
     - separator "Addon panel resize handle" [ref=e348]
     - region "Addon panel" [ref=e350]:
@@ -310,17 +310,17 @@ Received: 1
                   - columnheader "Name" [ref=e404]
                   - columnheader "Control" [ref=e405]
               - rowgroup [ref=e406]:
-                - row "variant variant secondary" [ref=e407]:
+                - row "variant variant text" [ref=e407]:
                   - cell "variant" [ref=e408]
-                  - cell "variant secondary" [ref=e409]:
+                  - cell "variant text" [ref=e409]:
                     - generic [ref=e410]:
                       - img
                       - generic [ref=e411]: variant
                       - combobox "variant" [ref=e412]:
                         - option "Choose option..."
                         - option "primary"
-                        - option "secondary" [selected]
-                        - option "text"
+                        - option "secondary"
+                        - option "text" [selected]
                 - row "size size small" [ref=e413]:
                   - cell "size" [ref=e414]
                   - cell "size small" [ref=e415]:
@@ -332,12 +332,12 @@ Received: 1
                         - option "large"
                         - option "medium"
                         - option "small" [selected]
-                - row "text Secondary Small" [ref=e419]:
+                - row "text Text Small" [ref=e419]:
                   - cell "text" [ref=e420]
-                  - cell "Secondary Small" [ref=e421]:
+                  - cell "Text Small" [ref=e421]:
                     - textbox [ref=e423]:
                       - /placeholder: Edit string...
-                      - text: Secondary Small
+                      - text: Text Small
                 - row "state state Choose option..." [ref=e424]:
                   - cell "state" [ref=e425]
                   - cell "state Choose option..." [ref=e426]:

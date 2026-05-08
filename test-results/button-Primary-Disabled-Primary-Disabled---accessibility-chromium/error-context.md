@@ -6,7 +6,7 @@
 
 # Test info
 
-- Name: button.spec.js >> Secondary Small >> Secondary Small - accessibility
+- Name: button.spec.js >> Primary Disabled >> Primary Disabled - accessibility
 - Location: tests/button.spec.js:23:5
 
 # Error details
@@ -127,41 +127,41 @@ Received: 1
                 - /url: /?path=/story/components-button--secondary-medium
                 - img [ref=e153]
                 - text: Secondary Medium
-              - generic [ref=e155]:
-                - link "Secondary Small" [ref=e156] [cursor=pointer]:
-                  - /url: /?path=/story/components-button--secondary-small
-                  - img [ref=e158]
-                  - text: Secondary Small
-                - link "Skip to content" [ref=e160] [cursor=pointer]:
-                  - /url: "#storybook-preview-wrapper"
-              - link "Text Large" [ref=e162] [cursor=pointer]:
+              - link "Secondary Small" [ref=e156] [cursor=pointer]:
+                - /url: /?path=/story/components-button--secondary-small
+                - img [ref=e158]
+                - text: Secondary Small
+              - link "Text Large" [ref=e161] [cursor=pointer]:
                 - /url: /?path=/story/components-button--text-large
-                - img [ref=e164]
+                - img [ref=e163]
                 - text: Text Large
-              - link "Text Medium" [ref=e167] [cursor=pointer]:
+              - link "Text Medium" [ref=e166] [cursor=pointer]:
                 - /url: /?path=/story/components-button--text-medium
-                - img [ref=e169]
+                - img [ref=e168]
                 - text: Text Medium
-              - link "Text Small" [ref=e172] [cursor=pointer]:
+              - link "Text Small" [ref=e171] [cursor=pointer]:
                 - /url: /?path=/story/components-button--text-small
-                - img [ref=e174]
+                - img [ref=e173]
                 - text: Text Small
-              - link "Primary Hover" [ref=e177] [cursor=pointer]:
+              - link "Primary Hover" [ref=e176] [cursor=pointer]:
                 - /url: /?path=/story/components-button--primary-hover
-                - img [ref=e179]
+                - img [ref=e178]
                 - text: Primary Hover
-              - link "Primary On Click" [ref=e182] [cursor=pointer]:
+              - link "Primary On Click" [ref=e181] [cursor=pointer]:
                 - /url: /?path=/story/components-button--primary-on-click
-                - img [ref=e184]
+                - img [ref=e183]
                 - text: Primary On Click
-              - link "Primary Focused" [ref=e187] [cursor=pointer]:
+              - link "Primary Focused" [ref=e186] [cursor=pointer]:
                 - /url: /?path=/story/components-button--primary-focused
-                - img [ref=e189]
+                - img [ref=e188]
                 - text: Primary Focused
-              - link "Primary Disabled" [ref=e192] [cursor=pointer]:
-                - /url: /?path=/story/components-button--primary-disabled
-                - img [ref=e194]
-                - text: Primary Disabled
+              - generic [ref=e190]:
+                - link "Primary Disabled" [ref=e191] [cursor=pointer]:
+                  - /url: /?path=/story/components-button--primary-disabled
+                  - img [ref=e193]
+                  - text: Primary Disabled
+                - link "Skip to content" [ref=e195] [cursor=pointer]:
+                  - /url: "#storybook-preview-wrapper"
               - link "With Left Icon" [ref=e197] [cursor=pointer]:
                 - /url: /?path=/story/components-button--with-left-icon
                 - img [ref=e199]
@@ -260,16 +260,16 @@ Received: 1
       - heading "Main preview area" [level=2] [ref=e339]
       - generic [ref=e341]:
         - link "Skip to sidebar" [ref=e342] [cursor=pointer]:
-          - /url: "#components-button--secondary-small"
+          - /url: "#components-button--primary-disabled"
         - iframe [ref=e346]:
           - generic [ref=f1e5]:
             - generic [ref=f1e7]:
               - generic [ref=f1e8]:
-                - paragraph [ref=f1e9]: Secondary Small
+                - paragraph [ref=f1e9]: Primary Large
                 - paragraph [ref=f1e10]: Preview inside the current Storybook brand/theme page
               - generic [ref=f1e11]: Page preview
-            - button "Secondary Small" [ref=f1e13] [cursor=pointer]:
-              - generic [ref=f1e15]: Secondary Small
+            - button "Primary Disabled" [disabled] [ref=f1e13]:
+              - generic [ref=f1e15]: Primary Disabled
   - generic [ref=e347]:
     - separator "Addon panel resize handle" [ref=e348]
     - region "Addon panel" [ref=e350]:
@@ -310,47 +310,47 @@ Received: 1
                   - columnheader "Name" [ref=e404]
                   - columnheader "Control" [ref=e405]
               - rowgroup [ref=e406]:
-                - row "variant variant secondary" [ref=e407]:
+                - row "variant variant primary" [ref=e407]:
                   - cell "variant" [ref=e408]
-                  - cell "variant secondary" [ref=e409]:
+                  - cell "variant primary" [ref=e409]:
                     - generic [ref=e410]:
                       - img
                       - generic [ref=e411]: variant
                       - combobox "variant" [ref=e412]:
                         - option "Choose option..."
-                        - option "primary"
-                        - option "secondary" [selected]
+                        - option "primary" [selected]
+                        - option "secondary"
                         - option "text"
-                - row "size size small" [ref=e413]:
+                - row "size size large" [ref=e413]:
                   - cell "size" [ref=e414]
-                  - cell "size small" [ref=e415]:
+                  - cell "size large" [ref=e415]:
                     - generic [ref=e416]:
                       - img
                       - generic [ref=e417]: size
                       - combobox "size" [ref=e418]:
                         - option "Choose option..."
-                        - option "large"
+                        - option "large" [selected]
                         - option "medium"
-                        - option "small" [selected]
-                - row "text Secondary Small" [ref=e419]:
-                  - cell "text" [ref=e420]
-                  - cell "Secondary Small" [ref=e421]:
-                    - textbox [ref=e423]:
-                      - /placeholder: Edit string...
-                      - text: Secondary Small
-                - row "state state Choose option..." [ref=e424]:
-                  - cell "state" [ref=e425]
-                  - cell "state Choose option..." [ref=e426]:
-                    - generic [ref=e427]:
+                        - option "small"
+                - row "state state disabled" [ref=e419]:
+                  - cell "state" [ref=e420]
+                  - cell "state disabled" [ref=e421]:
+                    - generic [ref=e422]:
                       - img
-                      - generic [ref=e428]: state
-                      - combobox "state" [ref=e429]:
-                        - option "Choose option..." [disabled] [selected]
+                      - generic [ref=e423]: state
+                      - combobox "state" [ref=e424]:
+                        - option "Choose option..."
                         - option "default"
                         - option "hover"
                         - option "onclick"
                         - option "focused"
-                        - option "disabled"
+                        - option "disabled" [selected]
+                - row "text Primary Disabled" [ref=e425]:
+                  - cell "text" [ref=e426]
+                  - cell "Primary Disabled" [ref=e427]:
+                    - textbox [ref=e429]:
+                      - /placeholder: Edit string...
+                      - text: Primary Disabled
                 - row "leftIcon leftIcon Choose option..." [ref=e430]:
                   - cell "leftIcon" [ref=e431]
                   - cell "leftIcon Choose option..." [ref=e432]:
